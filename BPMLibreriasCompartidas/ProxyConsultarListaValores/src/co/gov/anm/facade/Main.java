@@ -14,7 +14,7 @@ public class Main {
 
     public static void main(String[] args) {
         List<ListaSelectBean> lista = new ArrayList<ListaSelectBean>();
-        ResponseWS consultarListaValores = FacadeConsultarListaValores.getService().consultarListaValores("1", lista);
+        ResponseWS consultarListaValores = FacadeConsultarListaValores.getService().consultarListaValores("1",lista);
         for (ListaSelectBean item :lista){
             System.out.println("Codigo: "+item.getCodigo()+" Descripcion: "+ item.getDescripcion());
         }

@@ -1,5 +1,7 @@
 package co.gov.anm.Facade;
 
+
+
 import co.gov.anm.model.ListaSelectBean;
 import co.gov.anm.xmlns.appopt.listavaloresappsvc.consultarlistavalores_v1.ConsultarListaValoresRqType;
 import co.gov.anm.xmlns.appopt.listavaloresappsvc.consultarlistavalores_v1.ConsultarListaValoresRsType;
@@ -12,6 +14,7 @@ import co.gov.anm.xmlns.appsvc.consultarlistavalores_v1.ListaValoresAppSvcPort;
 import com.soaint.extend.base.Base;
 import com.soaint.util.service.ResponseWS;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.xml.ws.BindingProvider;
@@ -21,6 +24,7 @@ public class FacadeConsultarListaValores {
     private static ListaValoresAppSvcBindingSOAP11QSService ConsultarListaValores;
     private static FacadeConsultarListaValores ProxyService;
     private static ListaValoresAppSvcPort ConsultarListaValoresPorType;
+    
     
     
     public FacadeConsultarListaValores() {
@@ -61,7 +65,7 @@ public class FacadeConsultarListaValores {
         return ConsultarListaValoresPorType;
     }
     
-    public ResponseWS consultarListaValores(String idDominio,List<ListaSelectBean> listaValores) {
+    public ResponseWS consultarListaValores(String idDominio, List<ListaSelectBean> listaValores) {
         
         ResponseWS response = new ResponseWS();
         response.setSuccess(Boolean.TRUE);
