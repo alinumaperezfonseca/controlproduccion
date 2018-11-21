@@ -61,48 +61,38 @@
       <value n="oracle.toplink.workbench.addin.migration.TopLinkProjectMigrator" v="11.1.1.1.0"/>
    </hash>
    <list n="contentSets">
+      <string v="oracle.mds.internal.dt.ide.MDSLibraryCustCSProvider/mdsContentSet"/>
+      <string v="oracle.mds.internal.dt.ide.MDSADFLibVirtualNodeCSProvider/mdsLibVirtualNodeContentSet"/>
       <string v="oracle.jdeveloper.model.J2eeSettings/webContentSet"/>
       <string v="oracle.jdeveloper.model.PathsConfiguration/javaContentSet"/>
       <string v="oracle.ide.model.ResourcePaths/resourcesContentSet"/>
-      <string v="oracle.mds.internal.dt.ide.MDSLibraryCustCSProvider/mdsContentSet"/>
-      <string v="oracle.mds.internal.dt.ide.MDSADFLibVirtualNodeCSProvider/mdsLibVirtualNodeContentSet"/>
       <string v="oracle.jdeveloper.offlinedb.model.OfflineDBProjectSettings/offlineDBContentSet"/>
       <string v="oracle.tip.tools.ide.fabric.addin.SCAContentSetProvider/sca-content"/>
+      <string v="oracle.tip.tools.ide.ess.addin.ESSContentSetProvider/ess-content"/>
       <string v="oracle.bm.commonIde.data.project.ModelerProjectSettings/modelersContentSet"/>
+      <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
       <string v="oracle.adfdtinternal.model.ide.settings.ADFMSettings/adfmContentSet"/>
       <string v="oracle.sb.tooling.ide.core.projects.SbProjectSettings/sbContentSet"/>
-      <string v="oracle.toplink.workbench.addin/toplinkContentSet"/>
-      <string v="oracle.tip.tools.ide.ess.addin.ESSContentSetProvider/ess-content"/>
-      <string v="oracle.jdeveloper.model.PathsConfiguration/cepContentSet"/>
       <string v="oracle.bpm.fusion.studio.BPMProjectSettings/bpmProjectsProcessesContentSet"/>
+      <string v="oracle.jdeveloper.model.PathsConfiguration/cepContentSet"/>
    </list>
-   <value n="defaultPackage" v="co.gov.anm.proxy"/>
+   <value n="defaultPackage" v="co.gov.anm"/>
    <hash n="oracle.adfdtinternal.model.ide.settings.ADFMSettings">
       <value n="hasDataControls" v="true"/>
    </hash>
    <hash n="oracle.ide.model.TechnologyScopeConfiguration">
       <list n="technologyScope">
          <string v="ADF_FACES"/>
-         <string v="ADFbc"/>
-         <string v="ADFbc-Modeling"/>
-         <string v="ADFm"/>
-         <string v="ADFmBusinessEditor"/>
          <string v="Database"/>
-         <string v="Database-Modeling"/>
-         <string v="EJB-Modeling"/>
          <string v="JSF"/>
          <string v="JSP"/>
          <string v="Java"/>
-         <string v="Java-Modeling"/>
          <string v="TRINIDAD"/>
          <string v="TopLink"/>
          <string v="WSDL"/>
          <string v="WSPolicy"/>
          <string v="WebServices"/>
          <string v="XML"/>
-         <string v="XML_SCHEMA"/>
-         <string v="XQUERY"/>
-         <string v="XSL"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.compiler.OjcConfiguration">
@@ -110,8 +100,7 @@
    </hash>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
-         <hash n="ProxyConsultarTitulos">
-            <value n="adflib-connectionDetails" v="true"/>
+         <hash n="AlertasAppSvcBindingSOAP11QSService-Client">
             <hash n="archiveOptions">
                <value n="hasManifest" v="true"/>
             </hash>
@@ -123,16 +112,12 @@
                            <value n="type" v="2"/>
                         </hash>
                         <hash>
-                           <value n="type" v="5"/>
+                           <value n="type" v="7"/>
                         </hash>
                      </list>
                      <value n="displayName" v="Project Output"/>
                      <hash n="filters">
                         <list n="rules">
-                           <hash>
-                              <value n="pattern" v="WEB-INF/classes/**"/>
-                              <value n="type" v="1"/>
-                           </hash>
                            <hash>
                               <value n="pattern" v="**"/>
                               <value n="type" v="0"/>
@@ -144,42 +129,23 @@
                   </hash>
                </list>
             </hash>
-            <url n="jarURL" path="../Libs/Deploy/ProxyConsultarTitulos.jar"/>
-            <hash n="LibraryDependencies"/>
-            <value n="profileClass" v="oracle.adfdt.common.deploy.impl.AdfLibraryProfile"/>
-            <value n="profileName" v="ProxyConsultarTitulos"/>
+            <url n="jarURL" path="deploy/AlertasAppSvcBindingSOAP11QSService-Client.jar"/>
+            <value n="profileClass" v="oracle.jdeveloper.deploy.jar.ArchiveProfile"/>
+            <value n="profileName" v="AlertasAppSvcBindingSOAP11QSService-Client"/>
          </hash>
       </hash>
       <list n="profileList">
-         <string v="ProxyConsultarTitulos"/>
+         <string v="AlertasAppSvcBindingSOAP11QSService-Client"/>
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
       <value n="j2eeWebAppName" v="BPMLibreriasCompartidas-ProxyConsultarTitulos-webapp"/>
       <value n="j2eeWebContextRoot" v="BPMLibreriasCompartidas-ProxyConsultarTitulos-context-root"/>
    </hash>
-   <hash n="oracle.jdeveloper.model.PathsConfiguration">
-      <hash n="javaContentSet">
-         <list n="pattern-filters">
-            <string v="+**"/>
-         </list>
-         <list n="url-path">
-            <url path="../Project2/src/"/>
-         </list>
-      </hash>
-   </hash>
    <hash n="oracle.jdevimpl.config.JProjectLibraries">
       <list n="exportedReferences">
          <hash>
-            <value n="id" v="JSP Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JSF 2.2"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JSTL 1.2"/>
+            <value n="id" v="TopLink"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -199,6 +165,14 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
+            <url n="id" path="../../../../Users/ADMIN/AppData/Roaming/JDeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/My JAX-WS Client.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../../Users/ADMIN/AppData/Roaming/JDeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/My JAX-WS Web Service.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="Commons Beanutils 1.6"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -212,6 +186,18 @@
          </hash>
          <hash>
             <value n="id" v="ADF DVT Faces Databinding Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSP Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSF 2.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSTL 1.2"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -231,15 +217,7 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="JAX-WS Client"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JAX-WS Web Services"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="TopLink"/>
+            <value n="id" v="ADF Faces Runtime 11"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
@@ -285,15 +263,7 @@
       </hash>
       <list n="libraryReferences">
          <hash>
-            <value n="id" v="JSP Runtime"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JSF 2.2"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JSTL 1.2"/>
+            <value n="id" v="TopLink"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -313,6 +283,14 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
+            <url n="id" path="../../../../Users/ADMIN/AppData/Roaming/JDeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/My JAX-WS Client.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <url n="id" path="../../../../Users/ADMIN/AppData/Roaming/JDeveloper/system12.2.1.3.42.170820.0914/o.jdeveloper/My JAX-WS Web Service.library"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
             <value n="id" v="Commons Beanutils 1.6"/>
             <value n="isJDK" v="false"/>
          </hash>
@@ -326,6 +304,18 @@
          </hash>
          <hash>
             <value n="id" v="ADF DVT Faces Databinding Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSP Runtime"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSF 2.2"/>
+            <value n="isJDK" v="false"/>
+         </hash>
+         <hash>
+            <value n="id" v="JSTL 1.2"/>
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
@@ -345,21 +335,13 @@
             <value n="isJDK" v="false"/>
          </hash>
          <hash>
-            <value n="id" v="JAX-WS Client"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="JAX-WS Web Services"/>
-            <value n="isJDK" v="false"/>
-         </hash>
-         <hash>
-            <value n="id" v="TopLink"/>
+            <value n="id" v="ADF Faces Runtime 11"/>
             <value n="isJDK" v="false"/>
          </hash>
       </list>
    </hash>
    <hash n="oracle.jdevimpl.config.JProjectPaths">
-      <url n="outputDirectory" path="../Project2/classes/"/>
+      <url n="outputDirectory" path="classes/"/>
    </hash>
    <hash n="oracle.jdevimpl.webapp.facelets.libraries.ProjectFaceletsTagLibraries">
       <list n="facelets-tag-libraries">
