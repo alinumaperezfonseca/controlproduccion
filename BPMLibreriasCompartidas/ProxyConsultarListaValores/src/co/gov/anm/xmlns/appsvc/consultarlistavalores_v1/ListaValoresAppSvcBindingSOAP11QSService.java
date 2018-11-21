@@ -1,5 +1,5 @@
 
-package co.gov.anm.proxy;
+package co.gov.anm.xmlns.appsvc.consultarlistavalores_v1;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -23,7 +23,7 @@ import javax.xml.ws.WebServiceFeature;
 @WebServiceClient(name = "ListaValoresAppSvcBindingSOAP11QSService",
                   targetNamespace = "http://xmlns.anm.gov.co/AppSvc/ConsultarListaValores_V1.0",
                   wsdlLocation =
-                  "http://192.168.1.24:8011/ListaValoresRS/ConsultarListaValores?WSDL#%7Bhttp%3A%2F%2Fxmlns.anm.gov.co%2FAppSvc%2FConsultarListaValores_V1.0%7DListaValoresAppSvcBindingSOAP11QSService")
+                  "http://192.168.1.24:8011/ListaValoresRS/ConsultarListaValores?wsdl#%7Bhttp%3A%2F%2Fxmlns.anm.gov.co%2FAppSvc%2FConsultarListaValores_V1.0%7DListaValoresAppSvcBindingSOAP11QSService")
 public class ListaValoresAppSvcBindingSOAP11QSService extends Service {
 
     private final static URL LISTAVALORESAPPSVCBINDINGSOAP11QSSERVICE_WSDL_LOCATION;
@@ -37,7 +37,7 @@ public class ListaValoresAppSvcBindingSOAP11QSService extends Service {
         WebServiceException e = null;
         try {
             url =
-                new URL("http://192.168.1.24:8011/ListaValoresRS/ConsultarListaValores?WSDL#%7Bhttp%3A%2F%2Fxmlns.anm.gov.co%2FAppSvc%2FConsultarListaValores_V1.0%7DListaValoresAppSvcBindingSOAP11QSService");
+                new URL("http://192.168.1.24:8011/ListaValoresRS/ConsultarListaValores?wsdl#%7Bhttp%3A%2F%2Fxmlns.anm.gov.co%2FAppSvc%2FConsultarListaValores_V1.0%7DListaValoresAppSvcBindingSOAP11QSService");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

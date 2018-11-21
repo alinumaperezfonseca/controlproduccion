@@ -1,10 +1,5 @@
 
-package co.gov.anm.proxy;
-
-import co.gov.anm.xmlns.appopt.aoptcommon_v1.MsgHdrRq;
-import co.gov.anm.xmlns.appopt.aoptcommon_v1.MsgHdrRs;
-import co.gov.anm.xmlns.appopt.listavaloresappsvc.consultarlistavalores_v1.ConsultarListaValoresRqType;
-import co.gov.anm.xmlns.appopt.listavaloresappsvc.consultarlistavalores_v1.ConsultarListaValoresRsType;
+package co.gov.anm.xmlns.appsvc.consultarlistavalores_v1;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -13,6 +8,9 @@ import javax.jws.WebService;
 import javax.jws.soap.SOAPBinding;
 
 import javax.xml.bind.annotation.XmlSeeAlso;
+
+import co.gov.anm.xmlns.appopt.listavaloresappsvc.consultarlistavalores_v1.ConsultarListaValoresRqType;
+import co.gov.anm.xmlns.appopt.listavaloresappsvc.consultarlistavalores_v1.ConsultarListaValoresRsType;
 
 
 /**
@@ -23,7 +21,7 @@ import javax.xml.bind.annotation.XmlSeeAlso;
  */
 @WebService(name = "ListaValoresAppSvcPort",
             targetNamespace = "http://xmlns.anm.gov.co/AppSvc/ConsultarListaValores_V1.0")
-@SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.WRAPPED)
+@SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.BARE)
 @XmlSeeAlso({ co.gov.anm.xmlns.appopt.aoptcommon_v1.ObjectFactory.class,
               co.gov.anm.xmlns.appopt.listavaloresappsvc.consultarlistavalores_v1.ObjectFactory.class,
               co.gov.anm.xmlns.eo.status_v1.ObjectFactory.class
@@ -49,6 +47,4 @@ public interface ListaValoresAppSvcPort {
                                                                        partName = "ConsultarListaValoresRq")
                                                              ConsultarListaValoresRqType consultarListaValoresRq) throws SystemFault;
 
-    public ConsultarListaValoresRsType consultarListaValores(ConsultarListaValoresRqType consultarListaValoresRq,
-                                                             MsgHdrRq msgHdrRq, MsgHdrRs msgHdrRs);
 }

@@ -1,5 +1,5 @@
 
-package co.gov.anm.proxy;
+package co.gov.anm.xmlns.appsvc.consultarlistavalores_v1;
 
 import javax.xml.ws.WebFault;
 
