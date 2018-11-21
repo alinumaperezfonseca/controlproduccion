@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <TaskFlowCall
+      id="TaskFlowCall2">
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>FragAddDocumento&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
+      <property
+         name="activityId">FragAddDocumento</property>
+      <property
+         name="x">295.1338</property>
+      <property
+         name="y">335.1494</property>
+      <property
+         name="documentReference">/WEB-INF/tfFragAddDocumento.xml</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="taskFlowId">tfFragAddDocumento</property>
+   </TaskFlowCall>
+</SDM>

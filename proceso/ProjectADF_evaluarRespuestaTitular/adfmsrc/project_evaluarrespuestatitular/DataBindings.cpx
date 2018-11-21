@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.11.3" id="DataBindings"
+             SeparateXMLFiles="false" Package="project_evaluarrespuestatitular" ClientType="Generic">
+  <pageMap>
+    <page path="/Humantask_evaluarRespuestaTitular_Form.jspx"
+          usageId="project_evaluarrespuestatitular_Humantask_evaluarRespuestaTitular_FormPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="project_evaluarrespuestatitular_Humantask_evaluarRespuestaTitular_FormPageDef"
+          path="project_evaluarrespuestatitular.pageDefs.Humantask_evaluarRespuestaTitular_FormPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="Project_evaluarRespuestaTitular_Humantask_evaluarRespuestaTitular"
+        path="project_evaluarrespuestatitular.Project_evaluarRespuestaTitular_Humantask_evaluarRespuestaTitular"/>
+  </dataControlUsages>
+</Application>

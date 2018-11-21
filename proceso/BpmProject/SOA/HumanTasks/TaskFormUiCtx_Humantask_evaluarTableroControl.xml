@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tas:taskFormUiContext xmlns:tas="http://xmlns.oracle.com/taskformui">
+  <tas:taskFormName>Humantask_evaluarTableroControl_Form</tas:taskFormName>
+  <tas:taskFlowName>Humantask_evaluarTableroControl_TaskFlow</tas:taskFlowName>
+  <tas:templateType>packaged</tas:templateType>
+  <tas:packagedTemplate>default</tas:packagedTemplate>
+  <tas:header>
+    <tas:headerCustomActions>true</tas:headerCustomActions>
+    <tas:headerSystemActions>true</tas:headerSystemActions>
+    <tas:headerColumnCount>1</tas:headerColumnCount>
+    <tas:headerAttribList/>
+  </tas:header>
+  <tas:body>
+    <tas:title>Tablero de control</tas:title>
+    <tas:rowList>
+      <tas:row>
+        <tas:column>
+          <tas:attrib>Titulo.proyecto</tas:attrib>
+          <tas:attrib>Titulo.idTitularMinero</tas:attrib>
+          <tas:attrib>Titulo.contrato</tas:attrib>
+          <tas:attrib>Titulo.periodo</tas:attrib>
+          <tas:attrib>Titulo.anio</tas:attrib>
+          <tas:attrib>Titulo.nombreTitular</tas:attrib>
+          <tas:attrib>Titulo.titulo</tas:attrib>
+          <tas:attrib>Titulo.ubicacion</tas:attrib>
+          <tas:attrib>Titulo.fecha</tas:attrib>
+          <tas:attrib>Titulo.concepto</tas:attrib>
+          <tas:attrib>Titulo.contrato</tas:attrib>
+          <tas:attrib>Titulo.nombreTitular</tas:attrib>
+          <tas:attrib>Titulo.titulo</tas:attrib>
+          <tas:attrib>Titulo.ubicacion</tas:attrib>
+        </tas:column>
+      </tas:row>
+    </tas:rowList>
+  </tas:body>
+  <tas:footer>
+    <tas:comments>false</tas:comments>
+    <tas:attachments>false</tas:attachments>
+    <tas:history>false</tas:history>
+  </tas:footer>
+</tas:taskFormUiContext>

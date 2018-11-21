@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+    <af:panelGridLayout id="pgl1">
+        <af:gridRow marginTop="5px" height="auto" id="gr1">
+            <af:gridCell marginStart="5px" width="50%" id="gc1">
+                <af:panelLabelAndMessage label="tipos de alerta" id="proyectosId"></af:panelLabelAndMessage>
+            </af:gridCell>
+            <af:gridCell marginStart="5px" width="50%" marginEnd="5px" id="gc2">
+                <af:selectOneChoice id="soc1" value="#{pageFlowScope.mbFragAlerta.fragAlerta.idTipoAlerta}"
+                                    autoSubmit="true">
+                    <af:forEach items="#{pageFlowScope.mbFragAlerta.listAlertas}" var="row">
+                        <af:selectItem label="#{row.descripcion}" value="#{row.codigo}" id="si23"/>
+                    </af:forEach>
+                </af:selectOneChoice>
+            </af:gridCell>
+        </af:gridRow>
+        <af:gridRow marginTop="5px" height="auto" marginBottom="5px" id="gr2">
+            <af:gridCell marginStart="5px" width="50%" marginEnd="5px" id="gc2">
+                <af:panelLabelAndMessage label="Concepto" id="proyectosId"></af:panelLabelAndMessage>
+            </af:gridCell>
+            <af:gridCell marginStart="5px" width="50%" marginEnd="5px" id="gc2">
+                <af:inputText simple="false"
+                                                  columns="100"
+                                                  label="Concepto T&#233;cnico : " id="it26" rows="10">
+                                        
+                 </af:inputText>
+
+            </af:gridCell>
+        </af:gridRow>
+    </af:panelGridLayout>
+</jsp:root>

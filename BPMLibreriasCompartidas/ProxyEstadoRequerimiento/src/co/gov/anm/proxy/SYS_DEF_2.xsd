@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.anm.gov.co/appopt/ReportesAppSvc/ConsultarEstadoRequerimiento_V1.0" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:appoptConsultarEstadoRequerimiento="http://xmlns.anm.gov.co/appopt/ReportesAppSvc/ConsultarEstadoRequerimiento_V1.0" xmlns:appoptcommon="http://xmlns.anm.gov.co/appopt/AOptCommon_V1.0">
+  <xs:import namespace="http://xmlns.anm.gov.co/appopt/AOptCommon_V1.0" schemaLocation="SYS_DEF.xsd"/>
+  <xs:element name="ConsultarEstadoRequerimientoRq" type="appoptConsultarEstadoRequerimiento:ConsultarEstadoRequerimientoRq_Type"/>
+  <xs:element name="ConsultarEstadoRequerimientoRs" type="appoptConsultarEstadoRequerimiento:ConsultarEstadoRequerimientoRs_Type"/>
+  <xs:complexType name="TituloIn">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="IdTitulo" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarEstadoRequerimientoRq_Type">
+    <xs:sequence>
+      <xs:element name="TituloIn" type="appoptConsultarEstadoRequerimiento:TituloIn" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Estados">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="Estado" type="appoptConsultarEstadoRequerimiento:Estado" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Estado">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="Cantidad" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Estado" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarEstadoRequerimientoRs_Type">
+    <xs:sequence>
+      <xs:element name="Estados" type="appoptConsultarEstadoRequerimiento:Estados" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Status" type="appoptcommon:Status" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<schema targetNamespace="http://xmlns.oracle.com/bpel/workflow/task" xmlns:tns="http://xmlns.oracle.com/bpel/workflow/task" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ns2="http://xmlns.oracle.com/bpm/bpmobject/ANM/Concepto" xmlns:ns3="http://xmlns.oracle.com/bpm/bpmobject/ANM/Titulo" xmlns:ns0="http://xmlns.oracle.com/bpm/bpmobject/ANM/Produccion" xmlns:ns1="http://xmlns.oracle.com/bpm/bpmobject/ANM/Alerta">
+   <import namespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Produccion" schemaLocation="../businessCatalog/ANM/Produccion.xsd"/>
+   <import namespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Alerta" schemaLocation="../businessCatalog/ANM/Alerta.xsd"/>
+   <import namespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Concepto" schemaLocation="../businessCatalog/ANM/Concepto.xsd"/>
+   <import namespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Titulo" schemaLocation="../businessCatalog/ANM/Titulo.xsd"/>
+   <complexType name="Humantask_adjuntarActoAdministrativoPayloadType">
+      <sequence>
+         <element ref="ns0:Produccion"/>
+         <element ref="ns1:Alerta"/>
+         <element ref="ns2:Concepto"/>
+         <element ref="ns3:Titulo"/>
+      </sequence>
+   </complexType>
+</schema>

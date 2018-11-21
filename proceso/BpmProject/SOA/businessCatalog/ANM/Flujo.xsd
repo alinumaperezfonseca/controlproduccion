@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?bpmo version="12.1.3" build="00.00" fullName="ANM.Flujo" modifiers="[public]"?>
+<!--########################################################################################-->
+<!--####                                                                                ####-->
+<!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
+<!--#### CHANGES TO THIS FILE MAY PRODUCE UNEXPECTED BEHAVIOR AND WOULD BE OVERWRITTEN  ####-->
+<!--####                                                                                ####-->
+<!--########################################################################################-->
+<xs:schema targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Flujo" elementFormDefault="qualified" xmlns="http://xmlns.oracle.com/bpm/bpmobject/ANM/Flujo"  xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns:bpmo="http://xmlns.oracle.com/bpm/bpmobject/" >
+    <xs:complexType name="FlujoType">
+        <xs:sequence>
+            <xs:element name="entrada" default="1" nillable="true" type="xs:int"/>
+            <xs:element name="existenAlertas" default="1" nillable="true" type="xs:int"/>
+            <xs:element name="requiereVisitaTecnica" default="1" nillable="true" type="xs:int"/>
+            <xs:element name="requerimientosSubsanados" default="0" nillable="true" type="xs:int"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Flujo" type="FlujoType"/>
+</xs:schema>

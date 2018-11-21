@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.11.3" id="DataBindings"
+             SeparateXMLFiles="false" Package="projectadf_adjuntaractoadmin" ClientType="Generic">
+  <pageMap>
+    <page path="/Humantask_adjuntarActoAdministrativo_Form.jspx"
+          usageId="projectadf_adjuntaractoadmin_Humantask_adjuntarActoAdministrativo_FormPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="projectadf_adjuntaractoadmin_Humantask_adjuntarActoAdministrativo_FormPageDef"
+          path="projectadf_adjuntaractoadmin.pageDefs.Humantask_adjuntarActoAdministrativo_FormPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+        path="projectadf_adjuntaractoadmin.ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"/>
+  </dataControlUsages>
+</Application>

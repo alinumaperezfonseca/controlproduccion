@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="12.1.3" fileRevision="20120601"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+   <component name="ProcesoControlProduccion">
+      <topicDocumentations>
+         <topicDocumentation name="ProcesoControlProduccion">
+            <labels>
+               <label locale="en">Proceso control a la produccion</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Proceso control a la produccion</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23982863362377">
+            <labels>
+               <label locale="en">Consultar producción planeada</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Proceso_produccion</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23982868478215">
+            <labels>
+               <label locale="en">Consultar producción declarada</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Consultar producción declarada</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23982872797289">
+            <labels>
+               <label locale="en">Conultar producción de puntos de control</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Conultar producción de puntos de control</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23982876523424">
+            <labels>
+               <label locale="en">Comparara variables de producción</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Comparara variables de producción</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT2398288090893">
+            <labels>
+               <label locale="en">Generar Alertas</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Generar Alertas</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23982888321738">
+            <labels>
+               <label locale="en">Evaluar tablero de control</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23982906636053">
+            <labels>
+               <label locale="en">Generar concepto técnico</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23982914362826">
+            <labels>
+               <label locale="en">Solicitar visita técnica</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23982923976152">
+            <labels>
+               <label locale="en">Adjuntar acto administrativo</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23982938184276">
+            <labels>
+               <label locale="en">Evaluar respuesta del titular</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Evaluar respuesta del titular</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="EVT23982814407062">
+            <labels>
+               <label locale="en">Fin</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="EVT23983289421031">
+            <labels>
+               <label locale="en">Inicio</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="GTW23982883747938">
+            <labels>
+               <label locale="en">¿Existen alertas?</label>
+            </labels>
+            <descriptions>
+               <description locale="en">¿Existen alertas?</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="GTW23982899324680">
+            <labels>
+               <label locale="en">entrada</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="GTW23982911539125">
+            <labels>
+               <label locale="en">¿Requiere visita técnica?</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="GTW23982941089518">
+            <labels>
+               <label locale="en">¿Requerimientos resueltos?</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf23982866441070"/>
+         <topicDocumentation name="sf23982870760161"/>
+         <topicDocumentation name="sf23982875368418"/>
+         <topicDocumentation name="sf23982877839523"/>
+         <topicDocumentation name="sf23982882511411"/>
+         <topicDocumentation name="sf23982886001965">
+            <labels>
+               <label locale="en">NO</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf2398289402164">
+            <labels>
+               <label locale="en">SI</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf23982902867371">
+            <labels>
+               <label locale="en">Evaluar variables de producción</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf23982903726330">
+            <labels>
+               <label locale="en">Alerta desde el centro de monitoreo</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf2398290907351"/>
+         <topicDocumentation name="sf23982918811777"/>
+         <topicDocumentation name="sf23982920077126">
+            <labels>
+               <label locale="en"></label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf23982920632956"/>
+         <topicDocumentation name="sf23982928688995">
+            <labels>
+               <label locale="en"></label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf23982945558668">
+            <labels>
+               <label locale="en">SI</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf23982947432210"/>
+         <topicDocumentation name="sf23982948212387"/>
+         <topicDocumentation name="sf23982949838416"/>
+         <topicDocumentation name="sf23982956268352">
+            <labels>
+               <label locale="en">Resultado de la visita técnica</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf23983299684791"/>
+      </topicDocumentations>
+   </component>
+</processDocumentation>

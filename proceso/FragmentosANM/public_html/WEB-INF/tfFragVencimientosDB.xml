@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="tfFragVencimientosDB">
+    <default-activity>FragVencimiento</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <input-parameter-definition id="__2">
+      <name>fragVencimiento</name>
+      <value>#{pageFlowScope.fragVencimiento}</value>
+      <class>co.gov.anm.model.DashBoardVencimiento</class>
+    </input-parameter-definition>
+    <managed-bean id="__1">
+      <managed-bean-name>mbFragVencimiento</managed-bean-name>
+      <managed-bean-class>co.gov.anm.view.MbFragVencimientosDB</managed-bean-class>
+      <managed-bean-scope>pageFlow</managed-bean-scope>
+    </managed-bean>
+    <view id="FragVencimiento">
+      <page>/FragVencimiento.jsff</page>
+    </view>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

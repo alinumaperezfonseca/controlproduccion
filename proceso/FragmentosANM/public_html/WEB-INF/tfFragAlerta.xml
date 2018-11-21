@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="tfFragAlerta">
+    <default-activity>FragAlerta</default-activity>
+    <data-control-scope>
+      <shared/>
+    </data-control-scope>
+    <input-parameter-definition id="__2">
+      <name>fragAlertas</name>
+      <value>#{pageFlowScope.fragAlertas}</value>
+      <class>co.gov.anm.model.AlertaBean</class>
+    </input-parameter-definition>
+    <managed-bean id="__1">
+      <managed-bean-name>mbFragAlerta</managed-bean-name>
+      <managed-bean-class>co.gov.anm.view.MbFragAlertas</managed-bean-class>
+      <managed-bean-scope>pageFlow</managed-bean-scope>
+    </managed-bean>
+    <task-flow-call id="FragAlerta">
+      <task-flow-reference>
+        <document>/WEB-INF/tfFragAlerta.xml</document>
+        <id>tfFragAlerta</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <use-page-fragments/>
+  </task-flow-definition>
+</adfc-config>

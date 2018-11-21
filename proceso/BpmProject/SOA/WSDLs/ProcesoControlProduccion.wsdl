@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--########################################################################################-->
+<!--####                                                                                ####-->
+<!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
+<!--#### CHANGES TO THIS FILE MAY PRODUCE UNEXPECTED BEHAVIOR AND WOULD BE OVERWRITTEN  ####-->
+<!--####                                                                                ####-->
+<!--########################################################################################-->
+<wsdl:definitions targetNamespace="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"  xmlns:xsd="http://www.w3.org/2001/XMLSchema"  xmlns:plnk="http://schemas.xmlsoap.org/ws/2003/05/partner-link/"  xmlns:tns="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion"  xmlns:tns8="http://xmlns.oracle.com/bpm/bpmobject/ANM/Titulo"  xmlns:tns6="http://xmlns.oracle.com/bpm/bpmobject/ANM/Produccion"  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"  xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/"  xmlns:tns7="http://xmlns.oracle.com/bpm/bpmobject/ANM/Alerta" >
+    <wsdl:types>
+        <xsd:schema targetNamespace="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion">
+            <xsd:import namespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Produccion" schemaLocation="../businessCatalog/ANM/Produccion.xsd"/>
+            <xsd:import namespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Alerta" schemaLocation="../businessCatalog/ANM/Alerta.xsd"/>
+            <xsd:import namespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Titulo" schemaLocation="../businessCatalog/ANM/Titulo.xsd"/>
+            <xsd:element name="start">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element ref="tns6:Produccion"/>
+                        <xsd:element ref="tns7:Alerta"/>
+                        <xsd:element ref="tns8:Titulo"/>
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="endResponse">
+                <xsd:complexType>
+                    <xsd:sequence/>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="start">
+        <wsdl:part name="parameters" element="tns:start"/>
+    </wsdl:message>
+    <wsdl:message name="endResponse">
+        <wsdl:part name="parameters" element="tns:endResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="ProcesoControlProduccionPortType">
+        <wsdl:operation name="start">
+            <wsdl:input message="tns:start"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:portType name="ProcesoControlProduccionPortTypeCallBack">
+        <wsdl:operation name="end">
+            <wsdl:input message="tns:endResponse"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <plnk:partnerLinkType name="ProcesoControlProduccionPortTypePartnerLinkType">
+        <plnk:role name="ProcesoControlProduccionPortTypeProvider">
+            <plnk:portType name="tns:ProcesoControlProduccionPortType"/>
+        </plnk:role>
+    </plnk:partnerLinkType>
+</wsdl:definitions>

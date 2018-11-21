@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="12.1.3" fileRevision="20120601"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+   <component name="Process">
+      <topicDocumentations>
+         <topicDocumentation name="Process">
+            <labels>
+               <label locale="en">Crear Alerta</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Crear Alerta</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23983228671750">
+            <labels>
+               <label locale="en">Crear Alerta</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Crear Alerta</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23983230440918">
+            <labels>
+               <label locale="en">Control a la producción</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="ACT23983302584074">
+            <labels>
+               <label locale="en">Control a la producción</label>
+            </labels>
+            <descriptions>
+               <description locale="en">Control a la producción</description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="EVT23983230619118">
+            <labels>
+               <label locale="en">Start</label>
+            </labels>
+         </topicDocumentation>
+         <topicDocumentation name="EVT23983230619112">
+            <labels>
+               <label locale="en">End</label>
+            </labels>
+         </topicDocumentation>
+         <topicDocumentation name="sf23983230619147"/>
+         <topicDocumentation name="sf23983306718886"/>
+         <topicDocumentation name="EVT23983228671752">
+            <labels>
+               <label locale="en">Inicio</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="EVT23983228671795">
+            <labels>
+               <label locale="en">Fin</label>
+            </labels>
+            <descriptions>
+               <description locale="en"></description>
+            </descriptions>
+         </topicDocumentation>
+         <topicDocumentation name="sf23983228671775"/>
+         <topicDocumentation name="sf23983228671883"/>
+         <topicDocumentation name="sf23983230619123"/>
+      </topicDocumentations>
+   </component>
+</processDocumentation>

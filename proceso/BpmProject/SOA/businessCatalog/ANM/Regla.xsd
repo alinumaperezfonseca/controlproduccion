@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?bpmo version="12.1.3" build="00.00" fullName="ANM.Regla" modifiers="[public]"?>
+<!--########################################################################################-->
+<!--####                                                                                ####-->
+<!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
+<!--#### CHANGES TO THIS FILE MAY PRODUCE UNEXPECTED BEHAVIOR AND WOULD BE OVERWRITTEN  ####-->
+<!--####                                                                                ####-->
+<!--########################################################################################-->
+<xs:schema targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Regla" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns:bpmo="http://xmlns.oracle.com/bpm/bpmobject/"  xmlns="http://xmlns.oracle.com/bpm/bpmobject/ANM/Regla" >
+    <xs:complexType name="ReglaType">
+        <xs:sequence>
+            <xs:element name="resultadoEvaluacion" nillable="true" type="xs:string"/>
+            <xs:element name="resultadoComparacion1" nillable="true" type="xs:string"/>
+            <xs:element name="resultadoComparacion2" nillable="true" type="xs:string"/>
+            <xs:element name="resultadoComparacion3" nillable="true" type="xs:string"/>
+            <xs:element name="resultadoComparacion4" nillable="true" type="xs:string"/>
+            <xs:element name="resultadoComparacion5" nillable="true" type="xs:string"/>
+            <xs:element name="resultadoComparacion6" nillable="true" type="xs:string"/>
+            <xs:element name="resultadoComparacion7" nillable="true" type="xs:string"/>
+            <xs:element name="resultadoComparacion8" nillable="true" type="xs:string"/>
+            <xs:element name="resultadoComparacion9" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Regla" type="ReglaType"/>
+</xs:schema>

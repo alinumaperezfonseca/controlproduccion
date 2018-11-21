@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuracion>
+		<desarrollo>true</desarrollo>
+		<osb>
+			<protocol>http://</protocol>
+			<host>10.2.21.178</host>
+			<port>8011</port>
+		</osb>
+		<log>
+			<!-- En type se permite SYSTEM - LOGUER-->
+			<type>LOGUER</type>
+			<time-pattern>[%-5p]%d{yyyy-MM-dd HH:mm:ss.SSS } - %m%n</time-pattern>
+			<base-path>C:\\u01\\bpm\\logs\\</base-path>
+			<payload>true</payload>
+		</log>
+		<clave-segu-web>
+			<key></key>
+		</clave-segu-web>
+	</configuracion>

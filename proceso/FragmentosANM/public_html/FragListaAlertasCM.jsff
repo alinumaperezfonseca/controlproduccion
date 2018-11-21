@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1">
+
+
+
+    <af:table value="#{bindings.Alerta.collectionModel}" var="row" rows="#{bindings.Alerta.rangeSize}"
+              emptyText="#{bindings.Alerta.viewable ? 'No data to display.' : 'Access Denied.'}" rowBandingInterval="0"
+              fetchSize="#{bindings.Alerta.rangeSize}" id="t1" binding="#{backing_AlertasCM.t1}">
+        <af:column headerText="#{bindings.Alerta.hints.NombreAlerta.label}" id="c1">
+            <af:inputText value="#{row.bindings.NombreAlerta.inputValue}"
+                          label="#{bindings.Alerta.hints.NombreAlerta.label}"
+                          required="#{bindings.Alerta.hints.NombreAlerta.mandatory}"
+                          columns="#{bindings.Alerta.hints.NombreAlerta.displayWidth}"
+                          maximumLength="#{bindings.Alerta.hints.NombreAlerta.precision}"
+                          shortDesc="#{bindings.Alerta.hints.NombreAlerta.tooltip}" id="it1">
+                <f:validator binding="#{row.bindings.NombreAlerta.validator}"/>
+            </af:inputText>
+        </af:column>
+        <af:column headerText="#{bindings.Alerta.hints.FechaAlerta.label}" id="c2">
+            <af:inputText value="#{row.bindings.FechaAlerta.inputValue}"
+                          label="#{bindings.Alerta.hints.FechaAlerta.label}"
+                          required="#{bindings.Alerta.hints.FechaAlerta.mandatory}"
+                          columns="#{bindings.Alerta.hints.FechaAlerta.displayWidth}"
+                          maximumLength="#{bindings.Alerta.hints.FechaAlerta.precision}"
+                          shortDesc="#{bindings.Alerta.hints.FechaAlerta.tooltip}" id="it2">
+                <f:validator binding="#{row.bindings.FechaAlerta.validator}"/>
+            </af:inputText>
+        </af:column>
+        <af:column headerText="#{bindings.Alerta.hints.Severidad.label}" id="c3">
+            <af:inputText value="#{row.bindings.Severidad.inputValue}" label="#{bindings.Alerta.hints.Severidad.label}"
+                          required="#{bindings.Alerta.hints.Severidad.mandatory}"
+                          columns="#{bindings.Alerta.hints.Severidad.displayWidth}"
+                          maximumLength="#{bindings.Alerta.hints.Severidad.precision}"
+                          shortDesc="#{bindings.Alerta.hints.Severidad.tooltip}" id="it3">
+                <f:validator binding="#{row.bindings.Severidad.validator}"/>
+            </af:inputText>
+        </af:column>
+        <af:column headerText="#{bindings.Alerta.hints.Detalle.label}" id="c4">
+            <af:inputText value="#{row.bindings.Detalle.inputValue}" label="#{bindings.Alerta.hints.Detalle.label}"
+                          required="#{bindings.Alerta.hints.Detalle.mandatory}"
+                          columns="#{bindings.Alerta.hints.Detalle.displayWidth}"
+                          maximumLength="#{bindings.Alerta.hints.Detalle.precision}"
+                          shortDesc="#{bindings.Alerta.hints.Detalle.tooltip}" id="it4">
+                <f:validator binding="#{row.bindings.Detalle.validator}"/>
+            </af:inputText>
+        </af:column>
+    </af:table>
+
+
+
+
+
+</jsp:root>

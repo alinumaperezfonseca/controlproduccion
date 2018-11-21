@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?bpmo version="12.1.3" build="00.00" fullName="ANM.Concepto" modifiers="[public]"?>
+<!--########################################################################################-->
+<!--####                                                                                ####-->
+<!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
+<!--#### CHANGES TO THIS FILE MAY PRODUCE UNEXPECTED BEHAVIOR AND WOULD BE OVERWRITTEN  ####-->
+<!--####                                                                                ####-->
+<!--########################################################################################-->
+<xs:schema targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Concepto" elementFormDefault="qualified" xmlns="http://xmlns.oracle.com/bpm/bpmobject/ANM/Concepto"  xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns:bpmo="http://xmlns.oracle.com/bpm/bpmobject/" >
+    <xs:complexType name="ConceptoType">
+        <xs:sequence>
+            <xs:element name="referencia" nillable="true" type="xs:string"/>
+            <xs:element name="rmn" nillable="true" type="xs:string"/>
+            <xs:element name="asunto" nillable="true" type="xs:string"/>
+            <xs:element name="conceptoTecnico" nillable="true" type="xs:string"/>
+            <xs:element name="fecha" nillable="true" type="xs:date"/>
+            <xs:element name="asociaRequerimientos" nillable="true" type="xs:boolean"/>
+            <xs:element name="tipoPlazoRequerimiento" nillable="true" type="xs:string"/>
+            <xs:element name="plazoRequerimiento" nillable="true" type="xs:int"/>
+            <xs:element name="requerimiento" nillable="true" type="xs:string"/>
+            <xs:element name="idCorrespondencia" nillable="true" type="xs:string"/>
+            <xs:element name="requerimientoSubsanado" nillable="true" type="xs:boolean"/>
+            <xs:element name="plazoRequerimientoSubsanar" nillable="true" type="xs:int"/>
+            <xs:element name="tipoPlazoRequerimientoSubsanar" nillable="true" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Concepto" type="ConceptoType"/>
+</xs:schema>

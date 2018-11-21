@@ -1,0 +1,4 @@
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <system systemId="http://192.168.1.24:8011/ReportesRS/ConsultarVencimientoContractual?WSDL#%7Bhttp%3A%2F%2Fxmlns.anm.gov.co%2FAppSvc%2FConsultarVencimientoContractual_V1.0%7DReportesAppSvcBindingSOAP11QSService"
+          uri="../co/gov/anm/proxy/ReportesAppSvcBindingSOAP11QSService.wsdl"/>
+</catalog>

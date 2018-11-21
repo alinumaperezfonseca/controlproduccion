@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.11.3"
+          id="ProjectADF_tableroControl_Humantask_evaluarTableroControl"
+          BeanClass="ProjectADF_tableroControl_Humantask_evaluarTableroControl" isJavaBased="false">
+  <MethodAccessor IsCollection="false" Type="ProjectADF_tableroControl_Humantask_evaluarTableroControl.getTaskDetails"
+                  BeanClass="ProjectADF_tableroControl_Humantask_evaluarTableroControl.getTaskDetails"
+                  id="getTaskDetails" ReturnNodeName="Return">
+    <ParameterInfo id="bpmWorklistContext" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="bpmWorklistTaskId" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="bpmWorklistTaskVersion" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

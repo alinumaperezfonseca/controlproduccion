@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.11.3" id="Humantask_crearAlertaPayloadType"
+          Package="ProjectADF_crearAlerta_Humantask_crearAlerta"
+          BeanClass="ProjectADF_crearAlerta_Humantask_crearAlerta.Humantask_crearAlertaPayloadType" isJavaBased="false">
+  <AccessorAttribute id="Alerta" IsCollection="true" BeanClass="ProjectADF_crearAlerta_Humantask_crearAlerta.AlertaType"
+                     CollectionBeanClass="ProjectADF_crearAlerta_Humantask_crearAlerta.AlertaType_Alerta_Operations">
+    <Properties>
+      <Property Name="nextSiblingNamespace" Value="http://xmlns.oracle.com/bpm/bpmobject/ANM/Titulo"/>
+      <Property Name="nextSibling" Value="Titulo"/>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Alerta"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="Alerta"/>
+      <Property Name="targetNamespace" Value="http://xmlns.oracle.com/bpm/bpmobject/ANM/Alerta"/>
+    </Properties>
+  </AccessorAttribute>
+  <AccessorAttribute id="Titulo" IsCollection="true" BeanClass="ProjectADF_crearAlerta_Humantask_crearAlerta.TituloType"
+                     CollectionBeanClass="ProjectADF_crearAlerta_Humantask_crearAlerta.TituloType_Titulo_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Titulo"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="Titulo"/>
+      <Property Name="targetNamespace" Value="http://xmlns.oracle.com/bpm/bpmobject/ANM/Titulo"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

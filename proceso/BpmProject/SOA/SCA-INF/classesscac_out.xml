@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Faults>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:service[@name='ProcesoControlProduccion.service_3']</loc>
+      <line>93</line>
+      <col>108</col>
+      <file>C:\MyWork\ANM\ANMBpmApplicationV12\BpmProject\SOA\composite.xml</file>
+      <name>C:\MyWork\ANM\ANMBpmApplicationV12\BpmProject\SOA\composite.xml</name>
+      <fix/>
+      <msg>El servicio "ProcesoControlProduccion.service_3" no existe como origen de transmisión</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc>/ns:composite/ns:service[@name='ProcesoControlProduccion.service_2']</loc>
+      <line>32</line>
+      <col>108</col>
+      <file>C:\MyWork\ANM\ANMBpmApplicationV12\BpmProject\SOA\composite.xml</file>
+      <name>C:\MyWork\ANM\ANMBpmApplicationV12\BpmProject\SOA\composite.xml</name>
+      <fix/>
+      <msg>El servicio "ProcesoControlProduccion.service_2" no existe como origen de transmisión</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>HumanTasks/Humantask_generarConceptoTecnico.task</file>
+      <name>HumanTasks/Humantask_generarConceptoTecnico.task</name>
+      <fix/>
+      <msg>Error assignee not specified</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>HumanTasks/Humantask_adjuntarActoAdministrativo.task</file>
+      <name>HumanTasks/Humantask_adjuntarActoAdministrativo.task</name>
+      <fix/>
+      <msg>Error assignee not specified</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>HumanTasks/Humantask_evaluarRespuestaTitular.task</file>
+      <name>HumanTasks/Humantask_evaluarRespuestaTitular.task</name>
+      <fix/>
+      <msg>Error assignee not specified</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>HumanTasks/Humantask_evaluarTableroControl.task</file>
+      <name>HumanTasks/Humantask_evaluarTableroControl.task</name>
+      <fix/>
+      <msg>Error assignee not specified</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>HumanTasks/Humantask_crearAlerta.task</file>
+      <name>HumanTasks/Humantask_crearAlerta.task</name>
+      <fix/>
+      <msg>Error assignee not specified</msg>
+   </Fault>
+</Faults>

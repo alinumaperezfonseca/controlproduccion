@@ -1,0 +1,70 @@
+<?xml version = "1.0" encoding = "UTF-8" ?>
+<!--
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+  Oracle JDeveloper BPEL Designer 
+  
+  Created: Mon Nov 05 07:47:33 COT 2018
+  Author:  anperez
+  Type: BPEL 2.0 Process
+  Purpose: Asynchronous BPEL Process
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+-->
+<process name="BPEL_consultarProduccionPlaneada"
+         targetNamespace="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionPlaneada"
+         xmlns="http://docs.oasis-open.org/wsbpel/2.0/process/executable"
+         xmlns:client="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionPlaneada"
+         xmlns:ora="http://schemas.oracle.com/xpath/extension"
+         xmlns:ui="http://xmlns.oracle.com/soa/designer"
+         xmlns:bpelx="http://schemas.oracle.com/bpel/extension"
+         xmlns:bpel="http://docs.oasis-open.org/wsbpel/2.0/process/executable">
+
+    <import ui:processWSDL="true" namespace="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionPlaneada" location="WSDLs/BPEL_consultarProduccionPlaneada.wsdl" importType="http://schemas.xmlsoap.org/wsdl/"/>
+    <!-- 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        PARTNERLINKS                                                      
+        List of services participating in this BPEL process               
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    --> 
+    <partnerLinks>
+        <!-- 
+      The 'client' role represents the requester of this service. It is 
+      used for callback. The location and correlation information associated
+      with the client role are automatically set using WS-Addressing.
+    -->
+        <partnerLink name="bpel_consultarproduccionplaneada_client" partnerLinkType="client:BPEL_consultarProduccionPlaneada" myRole="BPEL_consultarProduccionPlaneadaProvider" partnerRole="BPEL_consultarProduccionPlaneadaRequester"/>
+    </partnerLinks>
+
+    <!-- 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        VARIABLES                                                        
+        List of messages and XML documents used within this BPEL process 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    -->
+    <variables>
+        <!-- Reference to the message passed as input during initiation -->
+        <variable name="inputVariable" messageType="client:BPEL_consultarProduccionPlaneadaRequestMessage"/>
+
+        <!-- Reference to the message that will be sent back to the requester during callback -->
+        <variable name="outputVariable" messageType="client:BPEL_consultarProduccionPlaneadaResponseMessage"/>
+        <variable name="receiveInput_process_InputVariable"
+                  messageType="client:BPEL_consultarProduccionPlaneadaRequestMessage"/>
+    </variables>
+
+    <!-- 
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+       ORCHESTRATION LOGIC                                               
+       Set of activities coordinating the flow of messages across the    
+       services integrated within this business process                  
+      ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    -->
+    <sequence name="main">
+        <!-- Receive input from requestor. (Note: This maps to operation defined in BPEL_consultarProduccionPlaneada.wsdl) -->
+        <receive name="receiveInput" partnerLink="bpel_consultarproduccionplaneada_client" portType="client:BPEL_consultarProduccionPlaneada" operation="process" createInstance="yes"
+                 variable="receiveInput_process_InputVariable"/>
+
+        <!-- 
+          Asynchronous callback to the requester. (Note: the callback location and correlation id is transparently handled using WS-addressing.)
+        -->
+        <invoke name="callbackClient" partnerLink="bpel_consultarproduccionplaneada_client" portType="client:BPEL_consultarProduccionPlaneadaCallback" operation="processResponse" inputVariable="outputVariable"/>
+    </sequence>
+</process>

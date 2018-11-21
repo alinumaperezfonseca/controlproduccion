@@ -1,0 +1,9 @@
+<ns0:handler-chains xmlns:ns0="http://java.sun.com/xml/ns/javaee">
+   <ns0:handler-chain>
+      <ns0:service-name-pattern xmlns:ns1="http://xmlns.anm.gov.co/AppSvc/ConsultarVencimientoContractual_V1.0">ns1:ReportesAppSvcBindingSOAP11QSService</ns0:service-name-pattern>
+      <ns0:handler>
+         <ns0:handler-name>HandlerMessageProxyServices</ns0:handler-name>
+         <ns0:handler-class>com.soaint.util.service.HandlerMessageProxyServices</ns0:handler-class>
+      </ns0:handler>
+   </ns0:handler-chain>
+</ns0:handler-chains>

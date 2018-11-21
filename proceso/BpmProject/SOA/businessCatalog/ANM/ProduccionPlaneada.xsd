@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?bpmo version="12.1.3" build="00.00" fullName="ANM.ProduccionPlaneada" modifiers="[public]"?>
+<!--########################################################################################-->
+<!--####                                                                                ####-->
+<!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
+<!--#### CHANGES TO THIS FILE MAY PRODUCE UNEXPECTED BEHAVIOR AND WOULD BE OVERWRITTEN  ####-->
+<!--####                                                                                ####-->
+<!--########################################################################################-->
+<xs:schema targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/ProduccionPlaneada" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns="http://xmlns.oracle.com/bpm/bpmobject/ANM/ProduccionPlaneada"  xmlns:bpmo="http://xmlns.oracle.com/bpm/bpmobject/" >
+    <xs:complexType name="ProduccionPlaneadaType">
+        <xs:sequence>
+            <xs:element name="cantidadPlaneadaCp" nillable="true" type="xs:double"/>
+            <xs:element name="cantidadPlaneadaLP" nillable="true" type="xs:double"/>
+            <xs:element name="cantidadPlaneadaMP" nillable="true" type="xs:double"/>
+            <xs:element name="cantidadPlaneada" nillable="true" type="xs:double"/>
+            <xs:element name="fecReporte" nillable="true" type="xs:date"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ProduccionPlaneada" type="ProduccionPlaneadaType"/>
+</xs:schema>

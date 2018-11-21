@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.11.3" id="TituloType_Titulo_Operations"
+          Package="ProjectADF_tableroControl_Humantask_evaluarTableroControl"
+          BeanClass="ProjectADF_tableroControl_Humantask_evaluarTableroControl.TituloType_Titulo_Operations"
+          isJavaBased="false">
+  <BuiltinOperation id="CreateInsert"/>
+  <BuiltinOperation id="Delete"/>
+</JavaBean>

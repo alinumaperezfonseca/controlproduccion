@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <TaskFlowCall
+      id="TaskFlowCall3">
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>FragAlerta&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
+      <property
+         name="activityId">FragAlerta</property>
+      <property
+         name="x">44.5</property>
+      <property
+         name="y">59.74707</property>
+      <property
+         name="documentReference">/WEB-INF/tfFragAlerta.xml</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="taskFlowId">tfFragAlerta</property>
+   </TaskFlowCall>
+</SDM>

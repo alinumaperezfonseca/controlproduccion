@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1" 
+        xmlns:af="http://xmlns.oracle.com/adf/faces/rich"     
+          xmlns:f="http://java.sun.com/jsf/core">
+
+        <af:panelFormLayout id="pfl1" labelWidth="15">
+            <af:inputFile label="Adjunto: " id="if1"
+                          valueChangeListener="#{pageFlowScope.fgAdjuntarDocumentos.cambiarArchivo}"
+                          autoSubmit="true"/>
+        </af:panelFormLayout>
+</jsp:root>          

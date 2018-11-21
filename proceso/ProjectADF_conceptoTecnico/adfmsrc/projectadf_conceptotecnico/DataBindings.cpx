@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.11.3" id="DataBindings"
+             SeparateXMLFiles="false" Package="projectadf_conceptotecnico" ClientType="Generic">
+  <pageMap>
+    <page path="/Humantask_generarConceptoTecnico_Form.jspx"
+          usageId="projectadf_conceptotecnico_Humantask_generarConceptoTecnico_FormPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="projectadf_conceptotecnico_Humantask_generarConceptoTecnico_FormPageDef"
+          path="projectadf_conceptotecnico.pageDefs.Humantask_generarConceptoTecnico_FormPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="ProjectADF_conceptoTecnico_Humantask_generarConceptoTecnico"
+        path="projectadf_conceptotecnico.ProjectADF_conceptoTecnico_Humantask_generarConceptoTecnico"/>
+  </dataControlUsages>
+</Application>

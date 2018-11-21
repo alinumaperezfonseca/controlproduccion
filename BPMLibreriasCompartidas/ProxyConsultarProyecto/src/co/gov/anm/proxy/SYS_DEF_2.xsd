@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.anm.gov.co/appopt/AlertasAppSvc/ConsultarProyecto_V1.0" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:appoptConsultarProyecto="http://xmlns.anm.gov.co/appopt/AlertasAppSvc/ConsultarProyecto_V1.0" xmlns:appoptcommon="http://xmlns.anm.gov.co/appopt/AOptCommon_V1.0">
+  <xs:import namespace="http://xmlns.anm.gov.co/appopt/AOptCommon_V1.0" schemaLocation="SYS_DEF.xsd"/>
+  <xs:element name="ConsultarProyectoRq" type="appoptConsultarProyecto:ConsultarProyectoRq_Type"/>
+  <xs:element name="ConsultarProyectoRs" type="appoptConsultarProyecto:ConsultarProyectoRs_Type"/>
+  <xs:element name="ConsultarProyectoRq_Type" type="appoptConsultarProyecto:ConsultarProyectoRq_Type"/>
+  <xs:complexType name="ConsultarProyectoRq_Type">
+    <xs:sequence/>
+  </xs:complexType>
+  <xs:complexType name="Proyectos">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="Proyecto" type="appoptConsultarProyecto:Proyecto" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Proyecto">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="IdProyecto" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="NombreProyecto" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarProyectoRs_Type">
+    <xs:sequence>
+      <xs:element name="Proyectos" type="appoptConsultarProyecto:Proyectos" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Status" type="appoptcommon:Status" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

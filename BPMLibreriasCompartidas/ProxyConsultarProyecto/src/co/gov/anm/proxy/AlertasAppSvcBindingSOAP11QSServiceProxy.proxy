@@ -1,0 +1,180 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<jdevws:WebServiceProxy xmlns:jdevws="http://xmlns.oracle.com/jdeveloper/10130/webserviceproxy">
+   <list n="CHILD_NODES">
+      <url path="AlertasAppSvcBindingSOAP11QSService.xml"/>
+      <url path="AlertasAppSvcBindingSOAP11QSService.wsdl"/>
+      <url path="SYS_DEF_2.xsd"/>
+      <url path="SYS_DEF_1.xsd"/>
+      <url path="SYS_DEF.xsd"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/Duration.java"/>
+      <url path="AlertasAppSvcPort.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/CountryCode.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/FieldRestriction.java"/>
+      <url path="../xmlns/appopt/alertasappsvc/consultarproyecto_v1/Proyecto.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/Field.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/NetworkTrnData.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/Status.java"/>
+      <url path="../xmlns/eo/status_v1/AdditionalStatus.java"/>
+      <url path="SystemFault.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/RecCtrlOut.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/CurAmt.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/CurAmtMandatory.java"/>
+      <url path="../xmlns/appopt/alertasappsvc/consultarproyecto_v1/Proyectos.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/PostAddr.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/package-info.java"/>
+      <url path="AlertasAppSvcBindingSOAP11QSPortClient.java"/>
+      <url path="../xmlns/appopt/alertasappsvc/consultarproyecto_v1/ObjectFactory.java"/>
+      <url path="../xmlns/eo/status_v1/ObjectFactory.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/ValueTypeMandatory.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/Freq.java"/>
+      <url path="../xmlns/appopt/alertasappsvc/consultarproyecto_v1/ConsultarProyectoRsType.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/Phone.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/TimeFrame.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/EnumPhoneType.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/RecCtrlIn.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/SessionInfo.java"/>
+      <url path="../xmlns/appopt/alertasappsvc/consultarproyecto_v1/package-info.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/Contact.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/Locator.java"/>
+      <url path="AlertasAppSvcBindingSOAP11QSService.java"/>
+      <url path="../xmlns/eo/status_v1/Status.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/CommonType.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/MsgHdrRq.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/ValueType.java"/>
+      <url path="../xmlns/eo/status_v1/package-info.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/ClientApp.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/MsgHdrRs.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/Country.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/Binary.java"/>
+      <url path="../xmlns/appopt/alertasappsvc/consultarproyecto_v1/ConsultarProyectoRqType.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/ObjectFactory.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/SocialMedia.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/CommonTypeMandatory.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/EnumSocialMediaType.java"/>
+      <url path="../xmlns/appopt/aoptcommon_v1/CustomDate.java"/>
+   </list>
+   <hash n="DATA_MODEL">
+      <value n="ATTACHMENT_ENCODING" v="MIME"/>
+      <list n="LOCAL_FILES"/>
+      <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy"/>
+      <url n="ORACLE_WEBSERVICES_XML" path="AlertasAppSvcBindingSOAP11QSService.xml"/>
+      <hash n="PROPERTY_GROUPS">
+         <hash n="HANDLER_CHAIN_GROUP">
+            <value n="HCG_FILE_PATH" v="AlertasAppSvcBindingSOAP11QSServiceProxy-HandlerChain.xml"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.HandlerChainGroup"/>
+         </hash>
+         <hash n="WSDL_TO_JAVA_PROPERTIES">
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+            <value n="WSDL2JAVA_DEFAULT_PACKAGE" v="co.gov.anm.proxy"/>
+         </hash>
+      </hash>
+      <value n="PROXY_ASYNC_METHODS" v="FOR_NONE"/>
+      <list n="PROXY_CLIENTS">
+         <url path="AlertasAppSvcBindingSOAP11QSPortClient.java"/>
+      </list>
+      <list n="PROXY_HANDLERS"/>
+      <value n="PROXY_MAPPING_URL"/>
+      <url n="PROXY_ORIGINAL_WSDL_URL" protocol="http" host="192.168.1.24" port="8011" path="/AlertasRS/ConsultarProyecto" query="WSDL"/>
+      <hash n="PROXY_PORTS">
+         <hash n="AlertasAppSvcBindingSOAP11QSPort">
+            <value n="ACCESSES_DOC_WRAPPPED" v="true"/>
+            <value n="ACCESSES_RPC_ENCODED" v="false"/>
+            <value n="CLASS_NAME" v="co.gov.anm.proxy.AlertasAppSvcPort"/>
+            <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyPort"/>
+            <value n="NAME" v="AlertasAppSvcBindingSOAP11QSPort"/>
+            <hash n="OPERATIONS">
+               <hash n="ConsultarProyecto">
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.ProxyOperation"/>
+                  <hash n="PROPERTY_GROUPS"/>
+               </hash>
+            </hash>
+            <hash n="PROPERTY_GROUPS">
+               <hash n="WS_POLICY">
+                  <value n="addressing"/>
+                  <hash n="GLOBAL_CONFIG_PROPERTIES"/>
+                  <list n="management"/>
+                  <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.policy.PolicyClientModel"/>
+                  <value n="mtom"/>
+                  <hash n="POLICY_OVERRIDE_PROPERTIES"/>
+                  <list n="security"/>
+                  <list n="wsconfig"/>
+                  <value n="wsrm"/>
+               </hash>
+            </hash>
+            <url n="PROXY_ORIGINAL_PORT_ENDPOINT" protocol="http" host="192.168.1.24" port="8011" path="/AlertasRS/ConsultarProyecto"/>
+         </hash>
+      </hash>
+      <value n="PROXY_SERVICE_NAME" v="AlertasAppSvcBindingSOAP11QSService"/>
+      <value n="PROXY_SERVICE_NAMESPACE" v="http://xmlns.anm.gov.co/AppSvc/ConsultarProyecto_V1.0"/>
+      <url n="PROXY_TARGET_PROJECT" path="../../../../../ProxyConsultarProyecto.jpr"/>
+      <list n="PROXY_WSDL_IMPORT_LIST">
+         <url path="SYS_DEF_2.xsd"/>
+         <url path="SYS_DEF_1.xsd"/>
+         <url path="SYS_DEF.xsd"/>
+      </list>
+      <url n="PROXY_WSDL_URL" path="AlertasAppSvcBindingSOAP11QSService.wsdl"/>
+      <hash n="REFERENCED_WEBSERVICE">
+         <list n="BD_">
+            <hash>
+               <value n="BOUND_PORT_TYPE" v="{http://xmlns.anm.gov.co/AppSvc/ConsultarProyecto_V1.0}AlertasAppSvcPort"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPBinding"/>
+               <value n="NAME" v="{http://xmlns.anm.gov.co/AppSvc/ConsultarProyecto_V1.0}AlertasAppSvcBindingSOAP11"/>
+               <list n="OP_BINDINGS">
+                  <hash>
+                     <value n="BOUND_OPERATION" v="co.gov.anm.xmlns.appopt.alertasappsvc.consultarproyecto_v1.ConsultarProyectoRsType.ConsultarProyecto.co.gov.anm.xmlns.appopt.alertasappsvc.consultarproyecto_v1.ConsultarProyectoRqType"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPOperationBinding"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+            </hash>
+         </list>
+         <list n="BINDING_FILES"/>
+         <value n="GUID" v="293ab201-0167-1000-8002-0ad486c83368"/>
+         <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.proxy.WebServiceProxy$ProxyJavaWebService"/>
+         <list n="PO_">
+            <hash>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.SOAPPort"/>
+               <value n="NAME" v="AlertasAppSvcBindingSOAP11QSPort"/>
+               <value n="PORT_BINDING_NAME" v="{http://xmlns.anm.gov.co/AppSvc/ConsultarProyecto_V1.0}AlertasAppSvcBindingSOAP11"/>
+               <list n="PORT_OPS">
+                  <hash>
+                     <value n="EXPOSED_BD_OPERATION" v="co.gov.anm.xmlns.appopt.alertasappsvc.consultarproyecto_v1.ConsultarProyectoRsType.consultarProyecto.co.gov.anm.xmlns.appopt.alertasappsvc.consultarproyecto_v1.ConsultarProyectoRqType"/>
+                     <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.PortOperation"/>
+                     <hash n="PROPERTY_GROUPS"/>
+                  </hash>
+               </list>
+               <hash n="PROPERTY_GROUPS"/>
+               <url n="URL" protocol="http" host="192.168.1.24" port="8011" path="/AlertasRS/ConsultarProyecto"/>
+            </hash>
+         </list>
+         <hash n="PROPERTY_GROUPS">
+            <hash n="WSDL_TO_JAVA_PROPERTIES">
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.WSDLToJavaProperties"/>
+               <value n="WSDL2JAVA_DEFAULT_PACKAGE" v="co.gov.anm.proxy"/>
+            </hash>
+         </hash>
+         <list n="PT_">
+            <hash>
+               <value n="AUTO_SERVICE_INTERFACE"/>
+               <value n="DEFAULT_NAME" v="false"/>
+               <value n="MODEL_CLASS" v="oracle.jdeveloper.webservices.model.java.JavaPortType"/>
+               <value n="NAME" v="{http://xmlns.anm.gov.co/AppSvc/ConsultarProyecto_V1.0}AlertasAppSvcPort"/>
+               <hash n="PROPERTY_GROUPS"/>
+               <value n="PT_CLASS" v="co.gov.anm.proxy.AlertasAppSvcPortImpl"/>
+               <value n="PT_SERVICE_INTERFACE" v="co.gov.anm.proxy.AlertasAppSvcPort"/>
+               <value n="PT_TOP_DOWN_GENERATED_SEI_NAME" v="co.gov.anm.proxy.AlertasAppSvcPort"/>
+            </hash>
+         </list>
+         <url n="TARGET_PROJECT" path="../../../../../ProxyConsultarProyecto.jpr"/>
+         <value n="WS_ORIG_GEN_DIRECTION" v="TOP_DOWN"/>
+         <value n="WS_TARGET_NAMESPACE" v="http://xmlns.anm.gov.co/AppSvc/ConsultarProyecto_V1.0"/>
+         <value n="WS_URI" v="AlertasAppSvcBindingSOAP11QSService"/>
+         <url n="WS_WSDL_FILE" path="AlertasAppSvcBindingSOAP11QSService.wsdl"/>
+      </hash>
+      <value n="SERVICE_ASYNC" v="false"/>
+      <value n="USE_WSDL_LOCATION" v="true"/>
+   </hash>
+</jdevws:WebServiceProxy>

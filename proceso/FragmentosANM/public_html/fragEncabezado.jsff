@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:f="http://java.sun.com/jsf/core">
+ 
+  <af:panelGroupLayout id="pgl2" layout="vertical">
+        <af:panelBox text="Seleccionar" id="pb1">         
+        <af:panelGridLayout id="pgl1">
+            <af:gridRow marginTop="5px" height="auto" id="gr1">
+                <af:gridCell marginStart="5px" width="50%" id="gc1">
+                    <af:panelLabelAndMessage label="Titular" id="contratosId1">Hola</af:panelLabelAndMessage>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="50%" marginEnd="5px" id="gc21"></af:gridCell>
+            </af:gridRow>
+            <af:gridRow marginTop="5px" height="auto" id="gr2">
+                <af:gridCell marginStart="5px" width="50%" id="gc2">
+                    <af:panelLabelAndMessage label="Titulo" id="contratosId22"></af:panelLabelAndMessage>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="50%" marginEnd="5px" id="gc22"></af:gridCell>
+            </af:gridRow>
+            <af:gridRow marginTop="5px" height="auto" id="gr3">
+                <af:gridCell marginStart="5px" width="50%" id="gc3">
+                    <af:panelLabelAndMessage label="Localizacion" id="contratosId3"></af:panelLabelAndMessage>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="50%" id="gc4"></af:gridCell>
+            </af:gridRow>
+            <af:gridRow marginTop="5px" height="auto" id="gr4">
+                <af:gridCell marginStart="5px" width="50%" id="gc5">
+                    <af:panelLabelAndMessage label="Fecha" id="contratosId4"></af:panelLabelAndMessage>
+                </af:gridCell>
+                <af:gridCell marginStart="5px" width="50%" marginEnd="5px" id="gc6"></af:gridCell>
+            </af:gridRow>
+        </af:panelGridLayout>
+    </af:panelBox>
+</af:panelGroupLayout>
+</jsp:root>

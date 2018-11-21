@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.11.3"
+                id="Humantask_adjuntarActoAdministrativo_FormPageDef" Package="projectadf_adjuntaractoadmin.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <methodIterator Binds="getTaskDetails.result"
+                    DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo" RangeSize="25"
+                    BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.getTaskDetails"
+                    id="getTaskDetailsIterator"/>
+    <accessorIterator MasterBinding="getTaskDetailsIterator" Binds="task" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.task"
+                      id="taskIterator" StateValidation="false"/>
+    <accessorIterator MasterBinding="taskIterator" Binds="systemAttributes" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.systemAttributesType"
+                      id="systemAttributesIterator"/>
+    <accessorIterator MasterBinding="systemAttributesIterator" Binds="systemActions" RangeSize="50"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.actionType"
+                      id="systemActionsIterator" StateValidation="false"/>
+    <accessorIterator MasterBinding="systemAttributesIterator" Binds="customActions" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.actionType"
+                      id="customActionsIterator"/>
+    <accessorIterator MasterBinding="systemAttributesIterator" Binds="fromUser" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.identityType"
+                      id="fromUserIterator"/>
+    <accessorIterator MasterBinding="systemAttributesIterator" Binds="assignees" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.identityType"
+                      id="assigneesIterator" StateValidation="false"/>
+    <accessorIterator MasterBinding="taskIterator" Binds="userComment" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.commentType"
+                      id="userCommentIterator" StateValidation="false"/>
+    <accessorIterator MasterBinding="userCommentIterator" Binds="updatedBy" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.identityType"
+                      id="updatedByIterator" StateValidation="false"/>
+    <accessorIterator MasterBinding="taskIterator" Binds="attachment" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.attachmentType"
+                      id="attachmentIterator" StateValidation="false"/>
+    <accessorIterator MasterBinding="attachmentIterator" Binds="ucmMetadataItem" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.ucmMetadataItemType"
+                      id="ucmMetadataItemIterator" StateValidation="false"/>
+    <accessorIterator MasterBinding="taskIterator" Binds="payload" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.Humantask_adjuntarActoAdministrativoPayloadType"
+                      id="payloadIterator"/>
+    <accessorIterator MasterBinding="payloadIterator" Binds="Produccion" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.ProduccionType"
+                      id="ProduccionIterator"/>
+    <accessorIterator MasterBinding="payloadIterator" Binds="Alerta" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.AlertaType"
+                      id="AlertaIterator"/>
+    <accessorIterator MasterBinding="payloadIterator" Binds="Concepto" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.ConceptoType"
+                      id="ConceptoIterator"/>
+    <accessorIterator MasterBinding="payloadIterator" Binds="Titulo" RangeSize="25"
+                      DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                      BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.TituloType"
+                      id="TituloIterator"/>
+  </executables>
+  <bindings>
+    <methodAction id="getTaskDetails" RequiresUpdateModel="true" Action="invokeMethod" MethodName="getTaskDetails"
+                  IsViewObjectMethod="false"
+                  DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                  InstanceName="bindings.getTaskDetails.dataControl"
+                  ReturnName="data.ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.methodResults.getTaskDetails_getTaskDetails_dataControl_getTaskDetails_result">
+      <NamedData NDName="bpmWorklistContext" NDType="java.lang.String" NDValue=""/>
+      <NamedData NDName="bpmWorklistTaskId" NDType="java.lang.String" NDValue=""/>
+      <NamedData NDName="bpmWorklistTaskVersion" NDType="java.lang.String" NDValue=""/>
+    </methodAction>
+    <methodAction IterBinding="taskIterator" id="UpdateAction" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="UpdateAction" IsViewObjectMethod="false"
+                  DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                  InstanceName="bindings.taskIterator.currentRow.dataProvider" IsLocalObjectReference="true">
+      <NamedData NDName="action" NDType="java.lang.String" NDValue=""/>
+    </methodAction>
+    <attributeValues IterBinding="taskIterator" id="title">
+      <AttrNames>
+        <Item Value="title"/>
+      </AttrNames>
+    </attributeValues>
+    <methodAction IterBinding="taskIterator" id="update" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="update" IsViewObjectMethod="false"
+                  DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                  InstanceName="bindings.taskIterator.currentRow.dataProvider" IsLocalObjectReference="true"/>
+    <navigationlist IterBinding="systemActionsIterator" ListOperMode="navigation" ListIter="systemActionsIterator"
+                    id="systemActions">
+      <AttrNames>
+        <Item Value="action"/>
+        <Item Value="displayName"/>
+      </AttrNames>
+    </navigationlist>
+    <attributeValues IterBinding="systemAttributesIterator" id="digitalSignatureRequired">
+      <AttrNames>
+        <Item Value="digitalSignatureRequired"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="passwordRequiredOnUpdate">
+      <AttrNames>
+        <Item Value="passwordRequiredOnUpdate"/>
+      </AttrNames>
+    </attributeValues>
+    <navigationlist IterBinding="customActionsIterator" ListOperMode="navigation" ListIter="customActionsIterator"
+                    id="customActions">
+      <AttrNames>
+        <Item Value="action"/>
+        <Item Value="displayName"/>
+      </AttrNames>
+    </navigationlist>
+    <methodAction IterBinding="taskIterator" id="Claim" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="Claim" IsViewObjectMethod="false"
+                  DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                  InstanceName="bindings.taskIterator.currentRow.dataProvider" IsLocalObjectReference="true"/>
+    <methodAction IterBinding="taskIterator" id="Acknowledge" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="Acknowledge" IsViewObjectMethod="false"
+                  DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                  InstanceName="bindings.taskIterator.currentRow.dataProvider" IsLocalObjectReference="true"/>
+    <methodAction IterBinding="taskIterator" id="Resume" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="Resume" IsViewObjectMethod="false"
+                  DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                  InstanceName="bindings.taskIterator.currentRow.dataProvider" IsLocalObjectReference="true"/>
+    <methodAction IterBinding="taskIterator" id="Withdraw" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="Withdraw" IsViewObjectMethod="false"
+                  DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                  InstanceName="bindings.taskIterator.currentRow.dataProvider" IsLocalObjectReference="true"/>
+    <methodAction IterBinding="taskIterator" id="APPROVE" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="APPROVE" IsViewObjectMethod="false"
+                  DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                  InstanceName="bindings.taskIterator.currentRow.dataProvider" IsLocalObjectReference="true"/>
+    <methodAction IterBinding="taskIterator" id="REJECT" RequiresUpdateModel="true" Action="invokeMethod"
+                  MethodName="REJECT" IsViewObjectMethod="false"
+                  DataControl="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+                  InstanceName="bindings.taskIterator.currentRow.dataProvider" IsLocalObjectReference="true"/>
+    <attributeValues IterBinding="taskIterator" id="creator">
+      <AttrNames>
+        <Item Value="creator"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="taskIterator" id="ownerUser">
+      <AttrNames>
+        <Item Value="ownerUser"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="taskIterator" id="priority">
+      <AttrNames>
+        <Item Value="priority"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="taskIterator" id="dueDate">
+      <AttrNames>
+        <Item Value="dueDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="taskIterator" id="creatorDisplayName">
+      <AttrNames>
+        <Item Value="creatorDisplayName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="taskIterator" id="ownerUserDisplayName">
+      <AttrNames>
+        <Item Value="ownerUserDisplayName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="acquiredBy">
+      <AttrNames>
+        <Item Value="acquiredBy"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="assignedDate">
+      <AttrNames>
+        <Item Value="assignedDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="createdDate">
+      <AttrNames>
+        <Item Value="createdDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="expirationDate">
+      <AttrNames>
+        <Item Value="expirationDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="outcome">
+      <AttrNames>
+        <Item Value="outcome"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="state">
+      <AttrNames>
+        <Item Value="state"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="taskNumber">
+      <AttrNames>
+        <Item Value="taskNumber"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="updatedDate">
+      <AttrNames>
+        <Item Value="updatedDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="actionDisplayName">
+      <AttrNames>
+        <Item Value="actionDisplayName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="activityId">
+      <AttrNames>
+        <Item Value="activityId"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="acquiredByDisplayName">
+      <AttrNames>
+        <Item Value="acquiredByDisplayName"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="fromUserIterator" id="id">
+      <AttrNames>
+        <Item Value="id"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="fromUserIterator" id="displayName">
+      <AttrNames>
+        <Item Value="displayName"/>
+      </AttrNames>
+    </attributeValues>
+    <tree IterBinding="assigneesIterator" id="assignees">
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.identityType">
+        <AttrNames>
+          <Item Value="id"/>
+          <Item Value="displayName"/>
+          <Item Value="type"/>
+          <Item Value="systemVersionFlag"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="userCommentIterator" id="userComment">
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.commentType">
+        <AttrNames>
+          <Item Value="comment"/>
+          <Item Value="updatedDate"/>
+          <Item Value="displayNameLanguage"/>
+          <Item Value="action"/>
+          <Item Value="systemVersionFlag"/>
+          <Item Value="acl"/>
+          <Item Value="doesBelongToParent"/>
+          <Item Value="isSystemComment"/>
+          <Item Value="taskId"/>
+          <Item Value="commentScope"/>
+          <Item Value="id"/>
+          <Item Value="operation"/>
+        </AttrNames>
+        <Accessors>
+          <Item Value="updatedBy"/>
+        </Accessors>
+      </nodeDefinition>
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.identityType">
+        <AttrNames>
+          <Item Value="id"/>
+          <Item Value="displayName"/>
+          <Item Value="type"/>
+          <Item Value="systemVersionFlag"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <action IterBinding="userCommentIterator" id="CreateInsert" RequiresUpdateModel="true" Action="createInsertRow"/>
+    <action IterBinding="userCommentIterator" id="Delete" RequiresUpdateModel="false" Action="removeCurrentRow"/>
+    <attributeValues IterBinding="userCommentIterator" id="comment">
+      <AttrNames>
+        <Item Value="comment"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="userCommentIterator" id="commentScope">
+      <AttrNames>
+        <Item Value="commentScope"/>
+      </AttrNames>
+    </attributeValues>
+    <tree IterBinding="updatedByIterator" id="updatedBy">
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.identityType">
+        <AttrNames>
+          <Item Value="id"/>
+          <Item Value="displayName"/>
+          <Item Value="type"/>
+          <Item Value="systemVersionFlag"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="userCommentIterator" id="userComment1">
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.commentType">
+        <AttrNames>
+          <Item Value="comment"/>
+          <Item Value="updatedDate"/>
+          <Item Value="displayNameLanguage"/>
+          <Item Value="action"/>
+          <Item Value="systemVersionFlag"/>
+          <Item Value="acl"/>
+          <Item Value="doesBelongToParent"/>
+          <Item Value="isSystemComment"/>
+          <Item Value="taskId"/>
+          <Item Value="commentScope"/>
+          <Item Value="id"/>
+          <Item Value="operation"/>
+        </AttrNames>
+        <Accessors>
+          <Item Value="updatedBy"/>
+        </Accessors>
+      </nodeDefinition>
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.identityType">
+        <AttrNames>
+          <Item Value="id"/>
+          <Item Value="displayName"/>
+          <Item Value="type"/>
+          <Item Value="systemVersionFlag"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="updatedByIterator" id="updatedBy1">
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.identityType">
+        <AttrNames>
+          <Item Value="id"/>
+          <Item Value="displayName"/>
+          <Item Value="type"/>
+          <Item Value="systemVersionFlag"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="attachmentIterator" id="attachment">
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.attachmentType">
+        <AttrNames>
+          <Item Value="content"/>
+          <Item Value="mimeType"/>
+          <Item Value="name"/>
+          <Item Value="updatedBy"/>
+          <Item Value="URI"/>
+          <Item Value="systemVersionFlag"/>
+          <Item Value="taskId"/>
+          <Item Value="version"/>
+          <Item Value="acl"/>
+          <Item Value="doesBelongToParent"/>
+          <Item Value="updatedDate"/>
+          <Item Value="correlationId"/>
+          <Item Value="size"/>
+          <Item Value="description"/>
+          <Item Value="storageType"/>
+          <Item Value="ucmDocType"/>
+          <Item Value="securityGroup"/>
+          <Item Value="account"/>
+          <Item Value="revision"/>
+          <Item Value="releaseDate"/>
+          <Item Value="expirationDate"/>
+          <Item Value="title"/>
+          <Item Value="attachmentScope"/>
+          <Item Value="isContentEncoded"/>
+          <Item Value="updatedByDisplayName"/>
+          <Item Value="id"/>
+          <Item Value="operation"/>
+        </AttrNames>
+      </nodeDefinition>
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.ucmMetadataItemType">
+        <AttrNames>
+          <Item Value="name"/>
+          <Item Value="value"/>
+          <Item Value="type"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <action IterBinding="attachmentIterator" id="CreateInsert1" RequiresUpdateModel="true" Action="createInsertRow"/>
+    <action IterBinding="attachmentIterator" id="Delete1" RequiresUpdateModel="false" Action="removeCurrentRow"/>
+    <attributeValues IterBinding="attachmentIterator" id="content">
+      <AttrNames>
+        <Item Value="content"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="mimeType">
+      <AttrNames>
+        <Item Value="mimeType"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="name">
+      <AttrNames>
+        <Item Value="name"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="updatedBy2">
+      <AttrNames>
+        <Item Value="updatedBy"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="URI">
+      <AttrNames>
+        <Item Value="URI"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="updatedDate1">
+      <AttrNames>
+        <Item Value="updatedDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="description">
+      <AttrNames>
+        <Item Value="description"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="ucmDocType">
+      <AttrNames>
+        <Item Value="ucmDocType"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="securityGroup">
+      <AttrNames>
+        <Item Value="securityGroup"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="account">
+      <AttrNames>
+        <Item Value="account"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="revision">
+      <AttrNames>
+        <Item Value="revision"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="releaseDate">
+      <AttrNames>
+        <Item Value="releaseDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="expirationDate1">
+      <AttrNames>
+        <Item Value="expirationDate"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="attachmentIterator" id="attachmentScope">
+      <AttrNames>
+        <Item Value="attachmentScope"/>
+      </AttrNames>
+    </attributeValues>
+    <action IterBinding="ucmMetadataItemIterator" id="CreateInsert2" RequiresUpdateModel="true"
+            Action="createInsertRow"/>
+    <action IterBinding="ucmMetadataItemIterator" id="Delete2" RequiresUpdateModel="false" Action="removeCurrentRow"/>
+    <tree IterBinding="ucmMetadataItemIterator" id="ucmMetadataItem">
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.ucmMetadataItemType">
+        <AttrNames>
+          <Item Value="name"/>
+          <Item Value="value"/>
+          <Item Value="type"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <attributeValues IterBinding="systemAttributesIterator" id="numberOfTimesModified">
+      <AttrNames>
+        <Item Value="numberOfTimesModified"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="systemAttributesIterator" id="version">
+      <AttrNames>
+        <Item Value="version"/>
+      </AttrNames>
+    </attributeValues>
+    <tree IterBinding="attachmentIterator" id="attachment1">
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.attachmentType">
+        <AttrNames>
+          <Item Value="content"/>
+          <Item Value="mimeType"/>
+          <Item Value="name"/>
+          <Item Value="updatedBy"/>
+          <Item Value="URI"/>
+          <Item Value="systemVersionFlag"/>
+          <Item Value="taskId"/>
+          <Item Value="version"/>
+          <Item Value="acl"/>
+          <Item Value="doesBelongToParent"/>
+          <Item Value="updatedDate"/>
+          <Item Value="correlationId"/>
+          <Item Value="size"/>
+          <Item Value="description"/>
+          <Item Value="storageType"/>
+          <Item Value="ucmDocType"/>
+          <Item Value="securityGroup"/>
+          <Item Value="account"/>
+          <Item Value="revision"/>
+          <Item Value="releaseDate"/>
+          <Item Value="expirationDate"/>
+          <Item Value="title"/>
+          <Item Value="attachmentScope"/>
+          <Item Value="isContentEncoded"/>
+          <Item Value="updatedByDisplayName"/>
+          <Item Value="id"/>
+          <Item Value="operation"/>
+        </AttrNames>
+      </nodeDefinition>
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.ucmMetadataItemType">
+        <AttrNames>
+          <Item Value="name"/>
+          <Item Value="value"/>
+          <Item Value="type"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <tree IterBinding="ucmMetadataItemIterator" id="ucmMetadataItem1">
+      <nodeDefinition DefName="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.ucmMetadataItemType">
+        <AttrNames>
+          <Item Value="name"/>
+          <Item Value="value"/>
+          <Item Value="type"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+    <attributeValues IterBinding="ProduccionIterator" id="fecInicial">
+      <AttrNames>
+        <Item Value="fecInicial"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ProduccionIterator" id="fecFinal">
+      <AttrNames>
+        <Item Value="fecFinal"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ProduccionIterator" id="unidadMedida">
+      <AttrNames>
+        <Item Value="unidadMedida"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ProduccionIterator" id="cantidadProducida">
+      <AttrNames>
+        <Item Value="cantidadProducida"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ProduccionIterator" id="valIndiceCalidad">
+      <AttrNames>
+        <Item Value="valIndiceCalidad"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ProduccionIterator" id="fecMuestraCalidad">
+      <AttrNames>
+        <Item Value="fecMuestraCalidad"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ProduccionIterator" id="etapa">
+      <AttrNames>
+        <Item Value="etapa"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AlertaIterator" id="estado">
+      <AttrNames>
+        <Item Value="estado"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AlertaIterator" id="tipoAlerta">
+      <AttrNames>
+        <Item Value="tipoAlerta"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="AlertaIterator" id="textoAlerta">
+      <AttrNames>
+        <Item Value="textoAlerta"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="referencia">
+      <AttrNames>
+        <Item Value="referencia"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="rmn">
+      <AttrNames>
+        <Item Value="rmn"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="asunto">
+      <AttrNames>
+        <Item Value="asunto"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="conceptoTecnico">
+      <AttrNames>
+        <Item Value="conceptoTecnico"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="fecha">
+      <AttrNames>
+        <Item Value="fecha"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="asociaRequerimientos">
+      <AttrNames>
+        <Item Value="asociaRequerimientos"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="tipoPlazoRequerimiento">
+      <AttrNames>
+        <Item Value="tipoPlazoRequerimiento"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="plazoRequerimiento">
+      <AttrNames>
+        <Item Value="plazoRequerimiento"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="requerimiento">
+      <AttrNames>
+        <Item Value="requerimiento"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="idCorrespondencia">
+      <AttrNames>
+        <Item Value="idCorrespondencia"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="requerimientoSubsanado">
+      <AttrNames>
+        <Item Value="requerimientoSubsanado"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="plazoRequerimientoSubsanar">
+      <AttrNames>
+        <Item Value="plazoRequerimientoSubsanar"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="ConceptoIterator" id="tipoPlazoRequerimientoSubsanar">
+      <AttrNames>
+        <Item Value="tipoPlazoRequerimientoSubsanar"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TituloIterator" id="proyecto">
+      <AttrNames>
+        <Item Value="proyecto"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TituloIterator" id="idTitularMinero">
+      <AttrNames>
+        <Item Value="idTitularMinero"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TituloIterator" id="contrato">
+      <AttrNames>
+        <Item Value="contrato"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TituloIterator" id="periodo">
+      <AttrNames>
+        <Item Value="periodo"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TituloIterator" id="anio">
+      <AttrNames>
+        <Item Value="anio"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TituloIterator" id="nombreTitular">
+      <AttrNames>
+        <Item Value="nombreTitular"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TituloIterator" id="titulo">
+      <AttrNames>
+        <Item Value="titulo"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TituloIterator" id="ubicacion">
+      <AttrNames>
+        <Item Value="ubicacion"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TituloIterator" id="fecha1">
+      <AttrNames>
+        <Item Value="fecha"/>
+      </AttrNames>
+    </attributeValues>
+    <attributeValues IterBinding="TituloIterator" id="concepto">
+      <AttrNames>
+        <Item Value="concepto"/>
+      </AttrNames>
+    </attributeValues>
+  </bindings>
+</pageDefinition>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <af:pageTemplateDef var="attrs">
+    <af:panelGroupLayout id="pt_pgl1" layout="vertical" styleClass="base">
+      <af:panelGroupLayout id="pt_pgl3" layout="vertical" styleClass="header">
+        <af:panelGroupLayout id="pt_pgl2" layout="vertical" halign="left">
+          <af:panelGroupLayout id="pt_pgl6" layout="horizontal" styleClass="AFStretchWidth">
+            <af:outputText value="#{attrs.nombreProceso}" id="pt_ot1" styleClass="titulo"/>
+            <af:image source="/ANMSkins/images/logoEncabezadoTumbnail.png"
+                      
+                      shortDesc="logo" id="pt_i1" styleClass="logo"/>
+          </af:panelGroupLayout>
+        </af:panelGroupLayout>
+      </af:panelGroupLayout>
+      <af:panelGroupLayout id="pt_pgl7" layout="vertical"
+                           visible="#{facesContext.externalContext.initParameterMap['co.gov.ica.comuoficial.DEBUG'] eq 'true'}"
+                           styleClass="logs">
+        <af:facetRef facetName="Logs"/>
+      </af:panelGroupLayout>
+      <af:panelGroupLayout id="pt_pgl12" layout="vertical" styleClass="maincontainer">
+        <af:panelGroupLayout id="pt_pgl5" styleClass="titulo" layout="vertical">
+          <af:outputText value="#{attrs.nombreActividad}" id="pt_ot11" styleClass="titulo"/>
+        </af:panelGroupLayout>
+        <af:panelGroupLayout id="pt_pgl10" layout="vertical" styleClass="cabecera">
+        <af:facetRef facetName="Cabecera"/>
+      </af:panelGroupLayout>
+      <af:panelGroupLayout id="pt_pgl4" layout="vertical"
+                           styleClass="contenido">
+          <af:facetRef facetName="Contenido"/>
+        </af:panelGroupLayout>
+      </af:panelGroupLayout>
+      <af:panelGroupLayout id="pt_pgl9" layout="vertical" styleClass="pie">
+        <af:facetRef facetName="Pie"/>
+        <af:panelGroupLayout id="pt_pgl11" halign="center" layout="vertical">
+          <af:outputText value="#{attrs.piePagina}" id="pt_ot3"/>
+        </af:panelGroupLayout>
+      </af:panelGroupLayout>
+    </af:panelGroupLayout>
+    <af:xmlContent>
+      <component xmlns="http://xmlns.oracle.com/adf/faces/rich/component">
+        <display-name>templateAnm</display-name>
+        <facet>
+          <description>Zona de Cabecera</description>
+          <facet-name>Cabecera</facet-name>
+        </facet>
+        <facet>
+          <description>Zona oculta en produccion</description>
+          <facet-name>Logs</facet-name>
+        </facet>
+        <facet>
+          <description>Zona Contenido</description>
+          <facet-name>Contenido</facet-name>
+        </facet>
+        <facet>
+          <description>Zona de Pie de Pagina</description>
+          <facet-name>Pie</facet-name>
+        </facet>
+        <attribute>
+          <attribute-name>nombreProceso</attribute-name>
+          <attribute-class>java.lang.String</attribute-class>
+        </attribute>
+        <attribute>
+          <attribute-name>nombreActividad</attribute-name>
+          <attribute-class>java.lang.String</attribute-class>
+        </attribute>
+        <attribute>
+          <attribute-name>piePagina</attribute-name>
+          <attribute-class>java.lang.String</attribute-class>
+          <default-value>© ANM. Todos los derechos reservados</default-value>
+        </attribute>
+      </component>
+    </af:xmlContent>
+  </af:pageTemplateDef>
+</jsp:root>

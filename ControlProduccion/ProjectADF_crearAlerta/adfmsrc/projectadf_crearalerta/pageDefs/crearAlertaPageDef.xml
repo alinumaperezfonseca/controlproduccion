@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="crearAlertaPageDef"
+                Package="projectadf_crearalerta.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <taskFlow id="fgConsultarProyectos_TF1" taskFlowId="/taskflows/fgConsultarProyectos_TF.xml#fgConsultarProyectos_TF"
+              activation="deferred" xmlns="http://xmlns.oracle.com/adf/controller/binding">
+      <parameters>
+        <parameter id="fragConsulta" value="#{pageFlowScope.MbCrearAlerta.fragConsultaBean}"/>
+      </parameters>
+    </taskFlow>
+    <taskFlow id="fgEncabezado_TF1" taskFlowId="/taskflows/fgEncabezado_TF.xml#fgEncabezado_TF" activation="deferred"
+              xmlns="http://xmlns.oracle.com/adf/controller/binding">
+      <parameters>
+        <parameter id="fragEncabezado" value="#{pageFlowScope.MbCrearAlerta.fragTituloContratoBean}"/>
+      </parameters>
+    </taskFlow>
+    <taskFlow id="fgAdjuntarDocumentos_TF1" taskFlowId="/taskflows/fgAdjuntarDocumentos_TF.xml#fgAdjuntarDocumentos_TF"
+              activation="deferred" xmlns="http://xmlns.oracle.com/adf/controller/binding"/>
+  </executables>
+  <bindings/>
+</pageDefinition>

@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<schema targetNamespace="http://xmlns.oracle.com/bpel/workflow/task" xmlns:tns="http://xmlns.oracle.com/bpel/workflow/task" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://xmlns.oracle.com/bpm/bpmobject/ANM/Titulo" xmlns:ns0="http://xmlns.oracle.com/bpm/bpmobject/ANM/Alerta">
+   <import namespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Alerta" schemaLocation="../businessCatalog/ANM/Alerta.xsd"/>
+   <import namespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Titulo" schemaLocation="../businessCatalog/ANM/Titulo.xsd"/>
+   <complexType name="Humantask_crearAlertaPayloadType">
+      <sequence>
+         <element ref="ns0:Alerta"/>
+         <element ref="ns1:Titulo"/>
+      </sequence>
+   </complexType>
+</schema>

@@ -1,0 +1,11 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<hwTaskFlows xmlns="http://xmlns.oracle.com/bpel/workflow/hwTaskFlowProperties">
+   <ApplicationName>worklist</ApplicationName>
+   <LookupType>LOCAL</LookupType>
+   <TaskFlowDeploy>false</TaskFlowDeploy>
+   <TaskFlowServer>
+      <hostName>192.168.1.24</hostName>
+      <httpPort>8001</httpPort>
+      <httpsPort/>
+   </TaskFlowServer>
+<hwTaskFlow><WorkflowName>Humantask_crearAlerta</WorkflowName><TaskDefinitionNamespace>http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/Humantask_crearAlerta</TaskDefinitionNamespace><TaskFlowId>Humantask_crearAlerta_TaskFlow</TaskFlowId><TaskFlowFileName>WEB-INF/Humantask_crearAlerta_TaskFlow.xml</TaskFlowFileName></hwTaskFlow></hwTaskFlows>

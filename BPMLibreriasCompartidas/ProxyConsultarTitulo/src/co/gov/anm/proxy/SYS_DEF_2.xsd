@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xs:schema targetNamespace="http://xmlns.anm.gov.co/appopt/AlertasAppSvc/ConsultarTitulo_V1.0" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:appoptConsultarTitulo="http://xmlns.anm.gov.co/appopt/AlertasAppSvc/ConsultarTitulo_V1.0" xmlns:appoptcommon="http://xmlns.anm.gov.co/appopt/AOptCommon_V1.0">
+  <xs:import namespace="http://xmlns.anm.gov.co/appopt/AOptCommon_V1.0" schemaLocation="SYS_DEF.xsd"/>
+  <xs:element name="ConsultarTituloRq" type="appoptConsultarTitulo:ConsultarTituloRq_Type"/>
+  <xs:element name="ConsultarTituloRs" type="appoptConsultarTitulo:ConsultarTituloRs_Type"/>
+  <xs:complexType name="TituloIn">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="IdTitulo" type="xs:string" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarTituloRq_Type">
+    <xs:sequence>
+      <xs:element name="TituloIn" type="appoptConsultarTitulo:TituloIn" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Titulos">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="Titulo" type="appoptConsultarTitulo:Titulo" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="Titulo">
+    <xs:sequence minOccurs="1" maxOccurs="1">
+      <xs:element name="IdTitulo" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="NombreTitulo" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Ubicacion" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Mineral" type="xs:string" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Titular" type="xs:string" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="ConsultarTituloRs_Type">
+    <xs:sequence>
+      <xs:element name="Titulos" type="appoptConsultarTitulo:Titulos" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="Status" type="appoptcommon:Status" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

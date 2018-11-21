@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <TaskFlowCall
+      id="TaskFlowCall2">
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>FragComparaciones&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  Task Flow Call&lt;/p></property>
+      <property
+         name="activityId">FragComparaciones</property>
+      <property
+         name="x">213.7959</property>
+      <property
+         name="y">350.1494</property>
+      <property
+         name="documentReference">/WEB-INF/tfFragComparaciones.xml</property>
+      <property
+         name="exceptionHandler">false</property>
+      <property
+         name="taskFlowId">tfFragComparaciones</property>
+   </TaskFlowCall>
+</SDM>

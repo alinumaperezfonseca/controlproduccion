@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+            xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+
+
+    <af:table value="#{bindings.Titulo.collectionModel}" var="row" rows="#{bindings.Titulo.rangeSize}"
+              emptyText="#{bindings.Titulo.viewable ? 'No data to display.' : 'Access Denied.'}" rowBandingInterval="0"
+              fetchSize="#{bindings.Titulo.rangeSize}" id="t1" binding="#{backing_consultarVenciContrac.t1}">
+        <af:column headerText="#{bindings.Titulo.hints.NombreTitulo.label}" id="c1">
+            <af:inputText value="#{row.bindings.NombreTitulo.inputValue}"
+                          label="#{bindings.Titulo.hints.NombreTitulo.label}"
+                          required="#{bindings.Titulo.hints.NombreTitulo.mandatory}"
+                          columns="#{bindings.Titulo.hints.NombreTitulo.displayWidth}"
+                          maximumLength="#{bindings.Titulo.hints.NombreTitulo.precision}"
+                          shortDesc="#{bindings.Titulo.hints.NombreTitulo.tooltip}" id="it1">
+                <f:validator binding="#{row.bindings.NombreTitulo.validator}"/>
+            </af:inputText>
+        </af:column>
+        <af:column headerText="#{bindings.Titulo.hints.FechaFinVigencia.label}" id="c2">
+            <af:inputText value="#{row.bindings.FechaFinVigencia.inputValue}"
+                          label="#{bindings.Titulo.hints.FechaFinVigencia.label}"
+                          required="#{bindings.Titulo.hints.FechaFinVigencia.mandatory}"
+                          columns="#{bindings.Titulo.hints.FechaFinVigencia.displayWidth}"
+                          maximumLength="#{bindings.Titulo.hints.FechaFinVigencia.precision}"
+                          shortDesc="#{bindings.Titulo.hints.FechaFinVigencia.tooltip}" id="it2">
+                <f:validator binding="#{row.bindings.FechaFinVigencia.validator}"/>
+            </af:inputText>
+        </af:column>
+        <af:column headerText="#{bindings.Titulo.hints.DiasRestantes.label}" id="c3">
+            <af:inputText value="#{row.bindings.DiasRestantes.inputValue}"
+                          label="#{bindings.Titulo.hints.DiasRestantes.label}"
+                          required="#{bindings.Titulo.hints.DiasRestantes.mandatory}"
+                          columns="#{bindings.Titulo.hints.DiasRestantes.displayWidth}"
+                          maximumLength="#{bindings.Titulo.hints.DiasRestantes.precision}"
+                          shortDesc="#{bindings.Titulo.hints.DiasRestantes.tooltip}" id="it3">
+                <f:validator binding="#{row.bindings.DiasRestantes.validator}"/>
+                <af:convertNumber groupingUsed="false" pattern="#{bindings.Titulo.hints.DiasRestantes.format}"/>
+            </af:inputText>
+        </af:column>
+    </af:table>
+
+
+
+
+
+</jsp:root>

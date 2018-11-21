@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ui:composition xmlns:ui="http://java.sun.com/jsf/facelets" xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+                xmlns:f="http://java.sun.com/jsf/core">
+    <af:panelGroupLayout id="pgl8" layout="vertical">
+        <af:panelBox text="Control a la Produccion a la ANM" id="pb1">
+            <af:panelGroupLayout id="pgl1" layout="horizontal" halign="left">
+                <af:panelGridLayout id="pgl2">
+                    <af:gridRow marginTop="2px" height="auto" id="gr1">
+                        <af:gridCell marginStart="2px" width="15%" id="gc1">
+                            <af:panelLabelAndMessage label="Proyectos de Interes Nacional (PIN)" id="proyectosId"></af:panelLabelAndMessage>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="35%" id="gc2">
+                            <af:selectOneChoice id="soc1"
+                                                value="#{pageFlowScope.mbFragConsulta.fragConsultaBean.idProyecto}"
+                                                autoSubmit="true">
+                                <af:forEach items="#{pageFlowScope.mbFragConsulta.listProyectos}" var="row">
+                                    <af:selectItem label="#{row.descripcion}" value="#{row.codigo}" id="si23"/>
+                                </af:forEach>
+                            </af:selectOneChoice>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="15%" id="gc12">
+                            <af:panelLabelAndMessage label="Contratos" id="contratosId"></af:panelLabelAndMessage>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="35%" id="gc22">
+                                <af:selectOneChoice id="soc12"
+                                                    value="#{pageFlowScope.mbFragConsulta.fragConsultaBean.idContrato}"
+                                                    autoSubmit="true">
+                                    <af:forEach items="#{pageFlowScope.mbFragConsulta.listTitulos}" var="row">
+                                        <af:selectItem label="#{row.descripcion}" value="#{row.codigo}" id="si232"/>
+                                    </af:forEach>
+                                </af:selectOneChoice>
+                            </af:gridCell>
+
+                    </af:gridRow>
+                    <af:gridRow marginTop="2px" height="auto" id="gr23">
+                        <af:gridCell marginStart="2px" width="15%" id="gc1235">
+                            <af:panelLabelAndMessage label="Año" id="anioId"></af:panelLabelAndMessage>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="35%" marginEnd="2px" id="gc89">
+                            <af:inputText label="" id="it1" value="#{pageFlowScope.mbFragConsulta.fragConsultaBean}"/>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="15%" id="gc123" value="#{pageFlowScope.mbFragConsulta.fragConsultaBean}">
+                            <af:panelLabelAndMessage label="Periodo" id="periodoId"></af:panelLabelAndMessage>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="35%" id="gc6">
+                            <af:selectOneChoice id="soc13"
+                                                    value="#{pageFlowScope.mbFragConsulta.fragConsultaBean.idPeriodo}"
+                                                    autoSubmit="true">
+                                    <af:forEach items="#{pageFlowScope.mbFragConsulta.listPeriodos}" var="row">
+                                        <af:selectItem label="#{row.descripcion}" value="#{row.codigo}" id="si2323"/>
+                                    </af:forEach>
+                                </af:selectOneChoice>
+                            </af:gridCell>
+                    </af:gridRow>
+                    <af:gridRow marginTop="2px" height="auto" marginBottom="2px" id="gr3">
+                        <af:gridCell marginStart="2px" columnSpan="4" marginEnd="2px" id="gc9">
+                            <af:button text="Consultar" id="b1"/>
+                        </af:gridCell>
+                    </af:gridRow>
+                </af:panelGridLayout>
+            </af:panelGroupLayout>
+        </af:panelBox>
+    </af:panelGroupLayout>
+</ui:composition>

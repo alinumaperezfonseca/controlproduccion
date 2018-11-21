@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dgm:gDiagram xmlns:dgm="http://xmlns.oracle.com/sca/soadgm">
+    <dgm:gService name="ProcesoControlProduccion.service_2">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="546" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="539" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="ProcesoControlProduccion.service_2" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortType)" callbackInterface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortTypeCallBack)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>start</dgm:item>
+            <dgm:item>end</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gService name="bpel_consultarproduccionplaneada_client_ep">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="26" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="19" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="bpel_consultarproduccionplaneada_client_ep" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionPlaneada#wsdl.interface(BPEL_consultarProduccionPlaneada)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionPlaneada#wsdl.interface(BPEL_consultarProduccionPlaneadaCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>process</dgm:item>
+            <dgm:item>processResponse</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gService name="bpel_consultarproducciondeclarada_client_ep">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="156" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="149" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="bpel_consultarproducciondeclarada_client_ep" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionDeclarada#wsdl.interface(BPEL_consultarProduccionDeclarada)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionDeclarada#wsdl.interface(BPEL_consultarProduccionDeclaradaCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>process</dgm:item>
+            <dgm:item>processResponse</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gService name="bpel_consultarproduccionpuntoscontrol_client_ep">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="416" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="409" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="bpel_consultarproduccionpuntoscontrol_client_ep" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ConsultarProduccionPuntosControl#wsdl.interface(BPEL_ConsultarProduccionPuntosControl)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ConsultarProduccionPuntosControl#wsdl.interface(BPEL_ConsultarProduccionPuntosControlCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>process</dgm:item>
+            <dgm:item>processResponse</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gService name="bpel_compararvariablesproduccion_client_ep">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="887" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="880" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="bpel_compararvariablesproduccion_client_ep" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_compararVariablesProduccion#wsdl.interface(BPEL_compararVariablesProduccion)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_compararVariablesProduccion#wsdl.interface(BPEL_compararVariablesProduccionCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>process</dgm:item>
+            <dgm:item>processResponse</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gService name="bpel_ejecutarreglatolerancia_client_ep">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="1151" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="1144" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="bpel_ejecutarreglatolerancia_client_ep" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ejecutarReglaTolerancia#wsdl.interface(BPEL_ejecutarReglaTolerancia)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ejecutarReglaTolerancia#wsdl.interface(BPEL_ejecutarReglaToleranciaCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>process</dgm:item>
+            <dgm:item>processResponse</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gService name="bpel_consultartitularesreportan_client_ep">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="286" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="279" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="bpel_consultartitularesreportan_client_ep" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarTitularesReportan#wsdl.interface(BPEL_consultarTitularesReportan)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarTitularesReportan#wsdl.interface(BPEL_consultarTitularesReportanCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>process</dgm:item>
+            <dgm:item>processResponse</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gService name="ProcesoControlProduccion.service_3">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="1021" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="1014" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="ProcesoControlProduccion.service_3" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortType)" callbackInterface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortTypeCallBack)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>start</dgm:item>
+            <dgm:item>end</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gService name="ProcesoControlProduccion.service">
+        <dgm:body borderWidth="2" arcRad="20" X="21" Y="712" width="137" height="96">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="11" Y="705" width="156" height="110">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="ProcesoControlProduccion.service" X="127" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortType)" callbackInterface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortTypeCallBack)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="20" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>start</dgm:item>
+            <dgm:item>end</dgm:item>
+        </dgm:operations>
+    </dgm:gService>
+    <dgm:gReference name="BPM-NotificationService">
+        <dgm:body borderWidth="2" arcRad="20" X="1110" Y="479" width="136" height="168">
+            <dgm:borderColor r="153" g="153" b="153"/>
+            <dgm:bgColor r="255" g="255" b="255"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="1100" Y="472" width="156" height="182">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="BPM-NotificationService" X="-10" Y="0" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ias/pcbpel/NotificationService#wsdl.interface(NotificationService)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/adapters/designtime/adapter/images/soap_service_20x20.png" X="27" Y="4" width="20" height="20"/>
+        <dgm:operations>
+            <dgm:item>sendIMNotification</dgm:item>
+            <dgm:item>sendFaxNotification</dgm:item>
+            <dgm:item>sendVoiceNotification</dgm:item>
+            <dgm:item>sendSMSNotification</dgm:item>
+            <dgm:item>sendPagerNotification</dgm:item>
+            <dgm:item>sendURINotification</dgm:item>
+            <dgm:item>sendEmailNotification</dgm:item>
+            <dgm:item>sendNotificationToUser</dgm:item>
+            <dgm:item>sendNotificationToGroup</dgm:item>
+        </dgm:operations>
+    </dgm:gReference>
+    <dgm:gComponent name="ProcesoControlProduccion">
+        <dgm:body borderWidth="2" arcRad="20" X="539" Y="490" width="130" height="286">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="529" Y="483" width="150" height="302">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="ProcesoControlProduccion.service" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortType)" callbackInterface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortTypeCallBack)"/>
+        <dgm:outputPort name="NotificationService.ACT23982914362826" X="120" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ias/pcbpel/NotificationService#wsdl.interface(NotificationService)"/>
+        <dgm:outputPort name="Services.BPEL.BPEL_consultarProduccionPlaneada.Bpel_consultarproduccionplaneada_client.reference" X="120" Y="40" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionPlaneada#wsdl.interface(BPEL_consultarProduccionPlaneada)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionPlaneada#wsdl.interface(BPEL_consultarProduccionPlaneadaCallback)"/>
+        <dgm:outputPort name="Services.BPEL.BPEL_consultarProduccionDeclarada.Bpel_consultarproducciondeclarada_client.reference" X="120" Y="65" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionDeclarada#wsdl.interface(BPEL_consultarProduccionDeclarada)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionDeclarada#wsdl.interface(BPEL_consultarProduccionDeclaradaCallback)"/>
+        <dgm:outputPort name="Services.BPEL.BPEL_ConsultarProduccionPuntosControl.Bpel_consultarproduccionpuntoscontrol_client.reference" X="120" Y="90" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ConsultarProduccionPuntosControl#wsdl.interface(BPEL_ConsultarProduccionPuntosControl)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ConsultarProduccionPuntosControl#wsdl.interface(BPEL_ConsultarProduccionPuntosControlCallback)"/>
+        <dgm:outputPort name="Services.BPEL.BPEL_compararVariablesProduccion.Bpel_compararvariablesproduccion_client.reference" X="120" Y="115" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_compararVariablesProduccion#wsdl.interface(BPEL_compararVariablesProduccion)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_compararVariablesProduccion#wsdl.interface(BPEL_compararVariablesProduccionCallback)"/>
+        <dgm:outputPort name="Services.BPEL.BPEL_ejecutarReglaTolerancia.Bpel_ejecutarreglatolerancia_client.reference" X="120" Y="140" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ejecutarReglaTolerancia#wsdl.interface(BPEL_ejecutarReglaTolerancia)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ejecutarReglaTolerancia#wsdl.interface(BPEL_ejecutarReglaToleranciaCallback)"/>
+        <dgm:outputPort name="HumanTasks.Humantask_evaluarTableroControl.reference" X="120" Y="165" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:outputPort name="HumanTasks.Humantask_generarConceptoTecnico.reference" X="120" Y="190" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:outputPort name="HumanTasks.Humantask_adjuntarActoAdministrativo.reference" X="120" Y="215" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:outputPort name="HumanTasks.Humantask_evaluarRespuestaTitular.reference" X="120" Y="240" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:nodeIcon URI="/oracle/bpm/fusion/soa/msg/images/bpmncomponent20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="BPEL_consultarProduccionPlaneada">
+        <dgm:body borderWidth="2" arcRad="20" X="857" Y="183" width="130" height="61">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="847" Y="176" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="bpel_consultarproduccionplaneada_client" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionPlaneada#wsdl.interface(BPEL_consultarProduccionPlaneada)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionPlaneada#wsdl.interface(BPEL_consultarProduccionPlaneadaCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/bpel/shared/plugins/resources/images/soa/process_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="BPEL_consultarProduccionDeclarada">
+        <dgm:body borderWidth="2" arcRad="20" X="857" Y="276" width="130" height="61">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="847" Y="269" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="bpel_consultarproducciondeclarada_client" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionDeclarada#wsdl.interface(BPEL_consultarProduccionDeclarada)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarProduccionDeclarada#wsdl.interface(BPEL_consultarProduccionDeclaradaCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/bpel/shared/plugins/resources/images/soa/process_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="BPEL_ConsultarProduccionPuntosControl">
+        <dgm:body borderWidth="2" arcRad="20" X="857" Y="369" width="130" height="61">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="847" Y="362" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="bpel_consultarproduccionpuntoscontrol_client" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ConsultarProduccionPuntosControl#wsdl.interface(BPEL_ConsultarProduccionPuntosControl)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ConsultarProduccionPuntosControl#wsdl.interface(BPEL_ConsultarProduccionPuntosControlCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/bpel/shared/plugins/resources/images/soa/process_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="BPEL_compararVariablesProduccion">
+        <dgm:body borderWidth="2" arcRad="20" X="857" Y="895" width="130" height="61">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="847" Y="888" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="bpel_compararvariablesproduccion_client" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_compararVariablesProduccion#wsdl.interface(BPEL_compararVariablesProduccion)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_compararVariablesProduccion#wsdl.interface(BPEL_compararVariablesProduccionCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/bpel/shared/plugins/resources/images/soa/process_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="BPEL_ejecutarReglaTolerancia">
+        <dgm:body borderWidth="2" arcRad="20" X="857" Y="990" width="130" height="61">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="847" Y="983" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="bpel_ejecutarreglatolerancia_client" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ejecutarReglaTolerancia#wsdl.interface(BPEL_ejecutarReglaTolerancia)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_ejecutarReglaTolerancia#wsdl.interface(BPEL_ejecutarReglaToleranciaCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/bpel/shared/plugins/resources/images/soa/process_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="Process">
+        <dgm:body borderWidth="2" arcRad="20" X="281" Y="610" width="130" height="86">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="271" Y="603" width="150" height="102">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="ProcesoControlProduccion.reference" X="120" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortType)" callbackInterface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortTypeCallBack)"/>
+        <dgm:outputPort name="HumanTasks.Humantask_crearAlerta.reference" X="120" Y="40" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:nodeIcon URI="/oracle/bpm/fusion/soa/msg/images/bpmncomponent20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="ReporteDeProducción">
+        <dgm:body borderWidth="2" arcRad="20" X="281" Y="490" width="130" height="86">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="271" Y="483" width="150" height="102">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:outputPort name="Services.BPEL.BPEL_consultarTitularesReportan.Bpel_consultartitularesreportan_client.reference" X="120" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarTitularesReportan#wsdl.interface(BPEL_consultarTitularesReportan)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarTitularesReportan#wsdl.interface(BPEL_consultarTitularesReportanCallback)"/>
+        <dgm:outputPort name="ProcesoControlProduccion.reference" X="120" Y="40" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortType)" callbackInterface="http://xmlns.oracle.com/bpmn/bpmnProcess/ProcesoControlProduccion#wsdl.interface(ProcesoControlProduccionPortTypeCallBack)"/>
+        <dgm:nodeIcon URI="/oracle/bpm/fusion/soa/msg/images/bpmncomponent20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="BPEL_consultarTitularesReportan">
+        <dgm:body borderWidth="2" arcRad="20" X="539" Y="373" width="130" height="61">
+            <dgm:borderColor r="69" g="113" b="140"/>
+            <dgm:lightBgColor r="166" g="208" b="230"/>
+            <dgm:darkBgColor r="99" g="162" b="201"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="529" Y="366" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="bpel_consultartitularesreportan_client" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarTitularesReportan#wsdl.interface(BPEL_consultarTitularesReportan)" callbackInterface="http://xmlns.oracle.com/ANMBpmApplicationV12/BpmProject/BPEL_consultarTitularesReportan#wsdl.interface(BPEL_consultarTitularesReportanCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/bpel/shared/plugins/resources/images/soa/process_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="Humantask_crearAlerta">
+        <dgm:body borderWidth="2" arcRad="20" X="539" Y="810" width="130" height="61">
+            <dgm:borderColor r="109" g="136" b="65"/>
+            <dgm:lightBgColor r="201" g="224" b="155"/>
+            <dgm:darkBgColor r="157" g="195" b="93"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="529" Y="803" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="TaskService" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/workflow/resources/images/humantask_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="Humantask_evaluarTableroControl">
+        <dgm:body borderWidth="2" arcRad="20" X="857" Y="482" width="130" height="61">
+            <dgm:borderColor r="109" g="136" b="65"/>
+            <dgm:lightBgColor r="201" g="224" b="155"/>
+            <dgm:darkBgColor r="157" g="195" b="93"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="847" Y="475" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="TaskService" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/workflow/resources/images/humantask_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="Humantask_generarConceptoTecnico">
+        <dgm:body borderWidth="2" arcRad="20" X="857" Y="575" width="130" height="61">
+            <dgm:borderColor r="109" g="136" b="65"/>
+            <dgm:lightBgColor r="201" g="224" b="155"/>
+            <dgm:darkBgColor r="157" g="195" b="93"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="847" Y="568" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="TaskService" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/workflow/resources/images/humantask_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="Humantask_adjuntarActoAdministrativo">
+        <dgm:body borderWidth="2" arcRad="20" X="857" Y="705" width="130" height="61">
+            <dgm:borderColor r="109" g="136" b="65"/>
+            <dgm:lightBgColor r="201" g="224" b="155"/>
+            <dgm:darkBgColor r="157" g="195" b="93"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="847" Y="698" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="TaskService" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/workflow/resources/images/humantask_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gComponent name="Humantask_evaluarRespuestaTitular">
+        <dgm:body borderWidth="2" arcRad="20" X="857" Y="800" width="130" height="61">
+            <dgm:borderColor r="109" g="136" b="65"/>
+            <dgm:lightBgColor r="201" g="224" b="155"/>
+            <dgm:darkBgColor r="157" g="195" b="93"/>
+        </dgm:body>
+        <dgm:shadow arcRad="20" X="847" Y="793" width="150" height="77">
+            <dgm:bgColor r="196" g="228" b="240"/>
+        </dgm:shadow>
+        <dgm:inputPort name="TaskService" X="-10" Y="15" diameter="20" imageURI="oracle/tip/tools/ide/fabric/resource/image/visuals_rd1/servicereference.png" interface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskService)" callbackInterface="http://xmlns.oracle.com/bpel/workflow/taskService#wsdl.interface(TaskServiceCallback)"/>
+        <dgm:nodeIcon URI="/oracle/tip/tools/ide/workflow/resources/images/humantask_20x20.png" X="10" Y="4" width="20" height="20"/>
+    </dgm:gComponent>
+    <dgm:gWireLink source="ProcesoControlProduccion/NotificationService.ACT23982914362826" target="BPM-NotificationService" width="2">
+        <dgm:gSegment X1="679" Y1="515" X2="718" Y2="515"/>
+        <dgm:gSegment X1="718" Y1="515" X2="718" Y2="456"/>
+        <dgm:gSegment X1="718" Y1="456" X2="1022" Y2="456"/>
+        <dgm:gSegment X1="1022" Y1="456" X2="1022" Y2="489"/>
+        <dgm:gSegment X1="1022" Y1="489" X2="1100" Y2="489"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="bpel_consultarproduccionplaneada_client_ep" target="BPEL_consultarProduccionPlaneada/bpel_consultarproduccionplaneada_client" width="2">
+        <dgm:gSegment X1="168" Y1="36" X2="778" Y2="36"/>
+        <dgm:gSegment X1="778" Y1="36" X2="778" Y2="208"/>
+        <dgm:gSegment X1="778" Y1="208" X2="847" Y2="208"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ProcesoControlProduccion/Services.BPEL.BPEL_consultarProduccionPlaneada.Bpel_consultarproduccionplaneada_client.reference" target="BPEL_consultarProduccionPlaneada/bpel_consultarproduccionplaneada_client" width="2">
+        <dgm:gSegment X1="679" Y1="540" X2="733" Y2="540"/>
+        <dgm:gSegment X1="733" Y1="540" X2="733" Y2="208"/>
+        <dgm:gSegment X1="733" Y1="208" X2="847" Y2="208"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="bpel_consultarproducciondeclarada_client_ep" target="BPEL_consultarProduccionDeclarada/bpel_consultarproducciondeclarada_client" width="2">
+        <dgm:gSegment X1="168" Y1="166" X2="763" Y2="166"/>
+        <dgm:gSegment X1="763" Y1="166" X2="763" Y2="301"/>
+        <dgm:gSegment X1="763" Y1="301" X2="847" Y2="301"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="bpel_consultarproduccionpuntoscontrol_client_ep" target="BPEL_ConsultarProduccionPuntosControl/bpel_consultarproduccionpuntoscontrol_client" width="2">
+        <dgm:gSegment X1="168" Y1="426" X2="460" Y2="426"/>
+        <dgm:gSegment X1="460" Y1="426" X2="460" Y2="462"/>
+        <dgm:gSegment X1="460" Y1="462" X2="703" Y2="462"/>
+        <dgm:gSegment X1="703" Y1="462" X2="703" Y2="394"/>
+        <dgm:gSegment X1="703" Y1="394" X2="847" Y2="394"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="bpel_compararvariablesproduccion_client_ep" target="BPEL_compararVariablesProduccion/bpel_compararvariablesproduccion_client" width="2">
+        <dgm:gSegment X1="168" Y1="897" X2="703" Y2="897"/>
+        <dgm:gSegment X1="703" Y1="897" X2="703" Y2="920"/>
+        <dgm:gSegment X1="703" Y1="920" X2="847" Y2="920"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="bpel_ejecutarreglatolerancia_client_ep" target="BPEL_ejecutarReglaTolerancia/bpel_ejecutarreglatolerancia_client" width="2">
+        <dgm:gSegment X1="168" Y1="1161" X2="703" Y2="1161"/>
+        <dgm:gSegment X1="703" Y1="1161" X2="703" Y2="1015"/>
+        <dgm:gSegment X1="703" Y1="1015" X2="847" Y2="1015"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ProcesoControlProduccion/Services.BPEL.BPEL_consultarProduccionDeclarada.Bpel_consultarproducciondeclarada_client.reference" target="BPEL_consultarProduccionDeclarada/bpel_consultarproducciondeclarada_client" width="2">
+        <dgm:gSegment X1="679" Y1="565" X2="748" Y2="565"/>
+        <dgm:gSegment X1="748" Y1="565" X2="748" Y2="301"/>
+        <dgm:gSegment X1="748" Y1="301" X2="847" Y2="301"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ProcesoControlProduccion/Services.BPEL.BPEL_ConsultarProduccionPuntosControl.Bpel_consultarproduccionpuntoscontrol_client.reference" target="BPEL_ConsultarProduccionPuntosControl/bpel_consultarproduccionpuntoscontrol_client" width="2">
+        <dgm:gSegment X1="679" Y1="590" X2="763" Y2="590"/>
+        <dgm:gSegment X1="763" Y1="590" X2="763" Y2="394"/>
+        <dgm:gSegment X1="763" Y1="394" X2="847" Y2="394"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ProcesoControlProduccion/Services.BPEL.BPEL_compararVariablesProduccion.Bpel_compararvariablesproduccion_client.reference" target="BPEL_compararVariablesProduccion/bpel_compararvariablesproduccion_client" width="2">
+        <dgm:gSegment X1="679" Y1="615" X2="823" Y2="615"/>
+        <dgm:gSegment X1="823" Y1="615" X2="823" Y2="920"/>
+        <dgm:gSegment X1="823" Y1="920" X2="847" Y2="920"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ProcesoControlProduccion/Services.BPEL.BPEL_ejecutarReglaTolerancia.Bpel_ejecutarreglatolerancia_client.reference" target="BPEL_ejecutarReglaTolerancia/bpel_ejecutarreglatolerancia_client" width="2">
+        <dgm:gSegment X1="679" Y1="640" X2="808" Y2="640"/>
+        <dgm:gSegment X1="808" Y1="640" X2="808" Y2="1015"/>
+        <dgm:gSegment X1="808" Y1="1015" X2="847" Y2="1015"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="Process/ProcesoControlProduccion.reference" target="ProcesoControlProduccion/ProcesoControlProduccion.service" width="2">
+        <dgm:gSegment X1="421" Y1="635" X2="475" Y2="635"/>
+        <dgm:gSegment X1="475" Y1="635" X2="475" Y2="515"/>
+        <dgm:gSegment X1="475" Y1="515" X2="529" Y2="515"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="bpel_consultartitularesreportan_client_ep" target="BPEL_consultarTitularesReportan/bpel_consultartitularesreportan_client" width="2">
+        <dgm:gSegment X1="168" Y1="296" X2="460" Y2="296"/>
+        <dgm:gSegment X1="460" Y1="296" X2="460" Y2="398"/>
+        <dgm:gSegment X1="460" Y1="398" X2="529" Y2="398"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ReporteDeProducción/Services.BPEL.BPEL_consultarTitularesReportan.Bpel_consultartitularesreportan_client.reference" target="BPEL_consultarTitularesReportan/bpel_consultartitularesreportan_client" width="2">
+        <dgm:gSegment X1="421" Y1="515" X2="445" Y2="515"/>
+        <dgm:gSegment X1="445" Y1="515" X2="445" Y2="398"/>
+        <dgm:gSegment X1="445" Y1="398" X2="529" Y2="398"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ReporteDeProducción/ProcesoControlProduccion.reference" target="ProcesoControlProduccion/ProcesoControlProduccion.service" width="2">
+        <dgm:gSegment X1="421" Y1="540" X2="460" Y2="540"/>
+        <dgm:gSegment X1="460" Y1="540" X2="460" Y2="515"/>
+        <dgm:gSegment X1="460" Y1="515" X2="529" Y2="515"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="Process/HumanTasks.Humantask_crearAlerta.reference" target="Humantask_crearAlerta/TaskService" width="2">
+        <dgm:gSegment X1="421" Y1="660" X2="505" Y2="660"/>
+        <dgm:gSegment X1="505" Y1="660" X2="505" Y2="835"/>
+        <dgm:gSegment X1="505" Y1="835" X2="529" Y2="835"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ProcesoControlProduccion/HumanTasks.Humantask_evaluarTableroControl.reference" target="Humantask_evaluarTableroControl/TaskService" width="2">
+        <dgm:gSegment X1="679" Y1="665" X2="778" Y2="665"/>
+        <dgm:gSegment X1="778" Y1="665" X2="778" Y2="507"/>
+        <dgm:gSegment X1="778" Y1="507" X2="847" Y2="507"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ProcesoControlProduccion/HumanTasks.Humantask_generarConceptoTecnico.reference" target="Humantask_generarConceptoTecnico/TaskService" width="2">
+        <dgm:gSegment X1="679" Y1="690" X2="793" Y2="690"/>
+        <dgm:gSegment X1="793" Y1="690" X2="793" Y2="600"/>
+        <dgm:gSegment X1="793" Y1="600" X2="847" Y2="600"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ProcesoControlProduccion/HumanTasks.Humantask_adjuntarActoAdministrativo.reference" target="Humantask_adjuntarActoAdministrativo/TaskService" width="2">
+        <dgm:gSegment X1="679" Y1="715" X2="718" Y2="715"/>
+        <dgm:gSegment X1="718" Y1="715" X2="718" Y2="730"/>
+        <dgm:gSegment X1="718" Y1="730" X2="847" Y2="730"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ProcesoControlProduccion/HumanTasks.Humantask_evaluarRespuestaTitular.reference" target="Humantask_evaluarRespuestaTitular/TaskService" width="2">
+        <dgm:gSegment X1="679" Y1="740" X2="703" Y2="740"/>
+        <dgm:gSegment X1="703" Y1="740" X2="703" Y2="825"/>
+        <dgm:gSegment X1="703" Y1="825" X2="847" Y2="825"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+    <dgm:gWireLink source="ProcesoControlProduccion.service" target="ProcesoControlProduccion/ProcesoControlProduccion.service" width="2">
+        <dgm:gSegment X1="168" Y1="722" X2="490" Y2="722"/>
+        <dgm:gSegment X1="490" Y1="722" X2="490" Y2="515"/>
+        <dgm:gSegment X1="490" Y1="515" X2="529" Y2="515"/>
+        <dgm:baseColor r="153" g="153" b="153"/>
+        <dgm:selectedColor r="49" g="106" b="196"/>
+    </dgm:gWireLink>
+</dgm:gDiagram>

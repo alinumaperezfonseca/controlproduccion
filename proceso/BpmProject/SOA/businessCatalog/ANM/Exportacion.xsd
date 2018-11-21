@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?bpmo version="12.1.3" build="00.00" fullName="ANM.Exportacion" modifiers="[public]"?>
+<!--########################################################################################-->
+<!--####                                                                                ####-->
+<!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
+<!--#### CHANGES TO THIS FILE MAY PRODUCE UNEXPECTED BEHAVIOR AND WOULD BE OVERWRITTEN  ####-->
+<!--####                                                                                ####-->
+<!--########################################################################################-->
+<xs:schema targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Exportacion" elementFormDefault="qualified" xmlns="http://xmlns.oracle.com/bpm/bpmobject/ANM/Exportacion"  xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns:bpmo="http://xmlns.oracle.com/bpm/bpmobject/" >
+    <xs:complexType name="ExportacionType">
+        <xs:sequence>
+            <xs:element name="fecCorteExportaciones" nillable="true" type="xs:date"/>
+            <xs:element name="cantidadExportada" nillable="true" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="Exportacion" type="ExportacionType"/>
+</xs:schema>

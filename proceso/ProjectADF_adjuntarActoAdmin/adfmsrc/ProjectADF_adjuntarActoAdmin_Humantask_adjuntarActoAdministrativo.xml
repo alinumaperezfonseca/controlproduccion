@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="12.2.1.11.3"
+          id="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo"
+          BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo" isJavaBased="false">
+  <MethodAccessor IsCollection="false"
+                  Type="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.getTaskDetails"
+                  BeanClass="ProjectADF_adjuntarActoAdmin_Humantask_adjuntarActoAdministrativo.getTaskDetails"
+                  id="getTaskDetails" ReturnNodeName="Return">
+    <ParameterInfo id="bpmWorklistContext" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="bpmWorklistTaskId" Type="java.lang.String" isStructured="false"/>
+    <ParameterInfo id="bpmWorklistTaskVersion" Type="java.lang.String" isStructured="false"/>
+  </MethodAccessor>
+</JavaBean>

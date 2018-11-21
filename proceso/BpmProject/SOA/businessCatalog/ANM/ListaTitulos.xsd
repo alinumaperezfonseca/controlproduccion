@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?bpmo version="12.1.3" build="00.00" fullName="ANM.ListaTitulos" modifiers="[public]"?>
+<!--########################################################################################-->
+<!--####                                                                                ####-->
+<!--####          THIS IS AN AUTO GENERATED FILE. PLEASE DO NOT MANUALLY MODIFY         ####-->
+<!--#### CHANGES TO THIS FILE MAY PRODUCE UNEXPECTED BEHAVIOR AND WOULD BE OVERWRITTEN  ####-->
+<!--####                                                                                ####-->
+<!--########################################################################################-->
+<xs:schema targetNamespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/ListaTitulos" elementFormDefault="qualified" xmlns="http://xmlns.oracle.com/bpm/bpmobject/ANM/ListaTitulos"  xmlns:xs="http://www.w3.org/2001/XMLSchema"  xmlns:ns1="http://xmlns.oracle.com/bpm/bpmobject/ANM/Titulo"  xmlns:bpmo="http://xmlns.oracle.com/bpm/bpmobject/" >
+    <xs:import namespace="http://xmlns.oracle.com/bpm/bpmobject/ANM/Titulo" schemaLocation="Titulo.xsd"/>
+    <xs:complexType name="ListaTitulosType">
+        <xs:sequence>
+            <xs:element name="attribute1" nillable="true" type="ns1:TituloType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ListaTitulos" type="ListaTitulosType"/>
+</xs:schema>

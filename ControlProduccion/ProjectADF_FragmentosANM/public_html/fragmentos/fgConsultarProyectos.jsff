@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich"
+          xmlns:f="http://java.sun.com/jsf/core">
+          
+  <af:panelGroupLayout id="pgl2" layout="vertical">
+        <af:panelBox text="Consultar Titulo" id="pb1">
+               <af:panelGridLayout id="pgl3">
+                    <af:gridRow marginTop="2px" height="auto" id="gr1">
+                        <af:gridCell marginStart="2px" width="15%" id="gc1" halign="end">
+                            <af:panelLabelAndMessage label="Proyectos de Interes Nacional (PIN) :" id="proyectosId"></af:panelLabelAndMessage>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="35%" id="gc2">
+                            <af:selectOneChoice id="soc1"
+                                                value="#{pageFlowScope.fgConsultarProyectosBean.fragConsultaBean.idProyecto}"
+                                                autoSubmit="true">
+                                <af:forEach items="#{pageFlowScope.fgConsultarProyectosBean.listProyectos}" var="row">
+                                    <af:selectItem label="#{row.descripcion}" value="#{row.codigo}" id="si23"/>
+                                </af:forEach>
+                            </af:selectOneChoice>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="15%" id="gc12" halign="end">
+                            <af:panelLabelAndMessage label="Contratos :" id="contratosId"></af:panelLabelAndMessage>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="35%" id="gc22">
+                                <af:selectOneChoice id="soc12"
+                                                    value="#{pageFlowScope.fgConsultarProyectosBean.fragConsultaBean.idContrato}"
+                                                    autoSubmit="true">
+                                    <af:forEach items="#{pageFlowScope.fgConsultarProyectosBean.listTitulos}" var="row">
+                                        <af:selectItem label="#{row.descripcion}" value="#{row.codigo}" id="si232"/>
+                                    </af:forEach>
+                                </af:selectOneChoice>
+                            </af:gridCell>
+
+                    </af:gridRow>
+                    <af:gridRow height="10px" id="gr2"></af:gridRow>
+                    <af:gridRow marginTop="2px" height="auto" id="gr23">
+                        <af:gridCell marginStart="2px" width="15%" id="gc1235" halign="end">
+                            <af:panelLabelAndMessage label="A&#241;o :" id="anioId"></af:panelLabelAndMessage>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="35%" marginEnd="2px" id="gc89">
+                            <af:inputText label="" id="it1" value="#{pageFlowScope.fgConsultarProyectosBean.fragConsultaBean.ano}"/>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="15%" id="gc123" halign="end"> 
+                            <af:panelLabelAndMessage label="Periodo :" id="periodoId"></af:panelLabelAndMessage>
+                        </af:gridCell>
+                        <af:gridCell marginStart="2px" width="35%" id="gc6">
+                            <af:selectOneChoice id="soc13"
+                                                value="#{pageFlowScope.fgConsultarProyectosBean.fragConsultaBean.idPeriodo}"
+                                                autoSubmit="true">
+                                <af:forEach items="#{pageFlowScope.fgConsultarProyectosBean.listPeriodos}" var="row">
+                                    <af:selectItem label="#{row.descripcion}" value="#{row.codigo}" id="si2323"/>
+                                </af:forEach>
+                            </af:selectOneChoice>
+                        </af:gridCell>
+                    </af:gridRow>
+                    <af:gridRow height="10px" id="gr4"></af:gridRow>
+                    <af:gridRow marginTop="2px" height="auto" marginBottom="2px" id="gr3">
+                        <af:gridCell marginStart="2px" columnSpan="4" halign="center" marginEnd="2px" id="gc9">
+                            <af:commandImageLink text="Generar Alerta" id="ctb2"
+                               styleClass="boton"
+                               partialSubmit="true"/>
+                        </af:gridCell>
+                    </af:gridRow>
+                </af:panelGridLayout>
+        </af:panelBox>
+  </af:panelGroupLayout>
+</jsp:root>

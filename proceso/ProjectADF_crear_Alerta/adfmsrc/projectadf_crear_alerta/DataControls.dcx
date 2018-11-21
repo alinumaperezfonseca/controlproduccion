@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration" version="12.2.1.11.3" id="DataControls"
+                    Package="projectadf_crear_alerta">
+  <AdapterDataControl id="ProjectADF_crear_Alerta_Humantask_crearAlerta"
+                      FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.bpel.services.datacontrol.XSDDataControlDefinition" SupportsTransactions="true"
+                      SupportsSortCollection="false" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="false"
+                      Definition="ProjectADF_crear_Alerta_Humantask_crearAlerta"
+                      BeanClass="ProjectADF_crear_Alerta_Humantask_crearAlerta"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <XSDDataControl xmlns="http://xmlns.oracle.com/bpel/workflow/task"
+                      SchemaLocation="file:/C:/MyWork/ANM/ANMBpmApplicationV12/ANMBpmApplicationV12/BpmProject/SOA/Schemas/Humantask_crearAlertaWorkflowTask.xsd"
+                      RootElement="task" rootelementnamespace="http://xmlns.oracle.com/bpel/workflow/task"
+                      taskLoc="../BpmProject/SOA/HumanTasks/Humantask_crearAlerta.task" InitiationTask="true"
+                      DocumentStoreConfiguration="false"/>
+    </Source>
+  </AdapterDataControl>
+</DataControlConfigs>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<library name="ADF Library Dependencies" id="oracle..adf-library-dependencies" deployed="true" locked="true" xmlns="http://xmlns.oracle.com/jdeveloper/1013/manifest-libraries">
+  <description/>
+  <classpath>../../BPMLibreriasCompartidas/Libs/BPMBaseUtilitaria.jar</classpath>
+  <classpath>../../BPMLibreriasCompartidas/Libs/Deploy/ProxyComparaciones.jar</classpath>
+  <classpath>../../BPMLibreriasCompartidas/Libs/Deploy/ProxyConsultarListaClient.jar</classpath>
+  <classpath>../../BPMLibreriasCompartidas/Libs/Deploy/ProxyConsultarProyecto.jar</classpath>
+  <classpath>../../BPMLibreriasCompartidas/Libs/Deploy/ProxyConsultarTitulo.jar</classpath>
+  <classpath>../../BPMLibreriasCompartidas/Libs/Deploy/ProxyConsultarTitulos.jar</classpath>
+  <classpath>../../BPMLibreriasCompartidas/Libs/Deploy/ProxyEstadoRequerimiento.jar</classpath>
+  <classpath>../../BPMLibreriasCompartidas/Libs/Deploy/ProxyVencimientos.jar</classpath>
+  <classpath>../../BPMLibreriasCompartidas/Libs/log4j-1.2.15.jar</classpath>
+  <classpath>../../../../Oracle/Middleware/Oracle_Home/lib/commonj.jar</classpath>
+  <classpath>../../../../Oracle/Middleware/Oracle_Home/soa/soa/modules/composer/soaComposerTemplates.jar</classpath>
+  <classpath>../../../../Oracle/Middleware/Oracle_Home/soa/soa/modules/oracle.soa.worklist_11.1.1/common-userprefs.jar</classpath>
+  <classpath>../../../../Oracle/Middleware/Oracle_Home/soa/soa/modules/rulesComponents/adflibGenericDCs.jar</classpath>
+  <classpath>../../../../Oracle/Middleware/Oracle_Home/soa/soa/modules/rulesComponents/adflibRulesSharedDC.jar</classpath>
+  <classpath>../../../../Oracle/Middleware/Oracle_Home/soa/soa/modules/rulesComponents/rulesSharedUtils.jar</classpath>
+</library>

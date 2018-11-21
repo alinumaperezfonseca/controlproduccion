@@ -1,0 +1,1010 @@
+/**ADFFaces_Skin_File / DO NOT REMOVE**/
+@namespace af "http://xmlns.oracle.com/adf/faces/rich";
+@namespace dvt "http://xmlns.oracle.com/dss/adf/faces";
+
+/**
+ * BPM ADF Skin
+ *
+ */
+ /***************** Plantilla *******************/
+.base,
+.af_document{
+    height: auto;
+    font-family:Arial, Helvetica, sans-serif !important;
+    font-size: 11px;
+    color:#333333 !important;
+    background: White !important;
+    
+    
+}
+    /*background-color: White !important;
+     line-height: 1.6em;*/
+    /*background: url("/ica/central/skins/ICA-Skin/imagen/bg-content.png") repeat-x !important;*/
+
+/*.af_document {
+  font-family:Tahoma, Verdana, Helvetica, sans-serif;
+  font-weight:normal;
+  font-size:11px;
+  background-color:#adb6c4;
+  color:#333333;
+  background-image:url(/HPH-CentralWeb/afr/fusion/page_background_white.png);
+  background-repeat:repeat-x;
+  background-position:top left
+}*/
+
+/*af|image*/
+.header .logo{
+  float: right;
+  margin: 8px 25px 8px 8px;
+}
+/*.header af|panelGroupLayout .titulo{}*/
+.header .titulo{
+    float: left;
+    font-size: 28px;
+    color: #427730;
+    font-weight: bold;
+    width: 75%;
+    margin-left: 25px;
+    margin-top: 30px;
+}
+/********************** Contenedor Principal: Cuerpo ***************************/
+.maincontainer {
+    padding: 25px;
+    background:white !important;
+}
+	
+.maincontainer .titulo {
+    font-size: 18px;
+    color: #427730;
+    font-weight: normal;
+    padding-bottom: 20px;
+    background:white !important;
+}
+
+.cabecera {
+  background:white !important;
+}
+
+.contenido{
+  background:white !important;
+}
+.logs{
+    background-color:white !important;
+    background: none !important;
+}
+.pie{
+    padding: 25px;
+    background:white !important;
+}
+
+
+/***************** FIN Plantilla *******************/
+
+/********************** Componentes dentro del Contenedor Contenido ***************************/
+/************ Label y Textos ************/
+.contenido af|inputText::label,
+.contenido af|panelFormLayout::label-stacked-cell,
+.contenido af|inputNumberSpinbox::label,
+.contenido af|inputListOfValues::label,
+.contenido af|inputDate::label,
+.contenido af|inputText::label,
+.contenido af|selectBooleanCheckbox::label,
+.contenido af|selectOneChoice::label,
+.contenido af|selectOneRadio::label,
+.contenido af|panelLabelAndMessage::label,
+.contenido af|outputLabel, 
+.contenido af|inputChoice::label, 
+.contenido af|inputFile::label, 
+.contenido af|inputNumberSpinbox::label, 
+.contenido af|selectBooleanRadio::label, 
+.contenido af|inputColor::label,
+.contenido af|richTextEditor::label, 
+.contenido af|codeEditor::label, 
+.contenido af|selectManyShuttle::label, 
+.contenido af|selectOrderShuttle::label, 
+.contenido af|selectManyChoice::label, 
+.contenido af|inputComboboxListOfValues::label, 
+.contenido af|quickQuery::label, 
+.contenido af|inputNumberSlider::label, 
+.contenido af|inputRangeSlider::label,
+.contenido af|inputListOfValues::label, 
+.contenido af|selectManyCheckbox::label, 
+.contenido af|selectManyListbox::label, 
+.contenido af|selectOneChoice::label, 
+.contenido af|selectOneListbox::label, 
+.contenido af|selectOneRadio::label, 
+.contenido af|panelLabelAndMessage::label, 
+.contenido .portlet-form-label, 
+.contenido .portlet-icon-label, 
+.contenido .portlet-dlg-icon-label, 
+.contenido .portlet-form-field-label,
+.contenido af|panelLabelAndMessage::label,
+.contenido af|selectManyCheckbox::content,
+.contenido af|panelFormLayout::content,
+.contenido af|inputNumberSpinbox::content,
+.contenido af|inputListOfValues::content,
+.contenido af|inputDate::content,
+.contenido af|inputText::content,
+.contenido af|selectBooleanCheckbox::content,
+.contenido af|selectOneChoice::content,
+.contenido af|selectOneRadio::content,
+.contenido af|panelLabelAndMessage::content, 
+.contenido af|inputChoice::content, 
+.contenido af|inputFile::content, 
+.contenido af|inputNumberSpinbox::content, 
+.contenido af|selectBooleanRadio::content, 
+.contenido af|inputColor::content,
+.contenido af|richTextEditor::content, 
+.contenido af|codeEditor::content, 
+.contenido af|selectManyShuttle::content, 
+.contenido af|selectOrderShuttle::content, 
+.contenido af|selectManyChoice::content, 
+.contenido af|inputComboboxListOfValues::content, 
+.contenido af|quickQuery::content, 
+.contenido af|inputNumberSlider::content, 
+.contenido af|inputRangeSlider::content,
+.contenido af|inputListOfValues::content, 
+.contenido af|selectManyCheckbox::content, 
+.contenido af|selectManyListbox::content, 
+.contenido af|selectOneChoice::content, 
+.contenido af|selectOneListbox::content, 
+.contenido af|selectOneRadio::content { 
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11px !important;
+    color: #333333 !important;
+    line-height: 1.6em !important;
+    font-weight: normal !important;
+    line-height: 15px !important;
+    margin-bottom: 0 !important;
+}
+
+/********************** Inputs, Combos, Checks ***************************/
+.contenido af|inputText::content,
+.contenido af|inputNumberSpinbox::content,
+.contenido af|inputListOfValues::content,
+.contenido af|inputDate::content,
+.contenido af|inputChoice::content, 
+.contenido af|inputNumberSpinbox::content, 
+.contenido af|inputColor::content,
+.contenido af|inputComboboxListOfValues::content, 
+.contenido af|inputNumberSlider::content, 
+.contenido af|inputRangeSlider::content,
+.contenido af|inputListOfValues::content {
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11px !important;
+    color: #333333 !important;
+    line-height: 1.6em !important;
+    font-weight: normal !important;
+    line-height: 15px !important;
+    margin-bottom: 0 !important;
+    background-color: #ffffff;
+    background: none !important;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+    display: inline-block;
+    min-height: 20px !important;
+    padding: 1px 5px;
+    margin-bottom: 1px;
+    line-height: 16px;
+    color: #555555;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    vertical-align: middle;   
+}
+.contenido af|selectManyListbox::content, 
+.contenido af|selectOneChoice::content, 
+.contenido af|selectOneListbox::content,
+.contenido af|selectManyChoice::content{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11px !important;
+    color: #333333 !important;
+    line-height: 1.6em !important;
+    font-weight: normal !important;
+    line-height: 15px !important;
+    margin-bottom: 0 !important;
+    background-color: #ffffff;
+    background: none !important;
+    border: 1px solid #cccccc;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border linear .2s, box-shadow linear .2s;
+    -moz-transition: border linear .2s, box-shadow linear .2s;
+    -o-transition: border linear .2s, box-shadow linear .2s;
+    transition: border linear .2s, box-shadow linear .2s;
+    display: inline-block;
+    height: 20px !important;
+    padding: 1px 5px;
+    margin-bottom: 5px;
+    line-height: 16px;
+    color: #555555;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    vertical-align: middle; 
+}
+.contenido af|selectManyChoice::control{
+    background-color: none !important;
+    background: none !important;
+    border: 0px solid !important;
+}
+.contenido af|selectOneChoice::content{
+    height: 24px !important;
+}
+.contenido af|inputFile::content{
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 11px !important;
+    color: #333333 !important;
+    line-height: 1.6em !important;
+    font-weight: normal !important;
+    line-height: 15px !important;
+    margin-bottom: 0 !important;
+    background-color: #ffffff;
+    height: 20px !important;
+    padding: 1px 5px;
+    margin-bottom: 5px;
+    line-height: 16px;
+    color: #555555;
+    vertical-align: middle;
+}
+/************ Calendario ************/
+.contenido af|chooseDate::week-header-row,
+.contenido af|chooseDate::week-header-cell,
+.contenido af|chooseDate::today {
+    background-color: #427730 !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+/************ Contraibles ************/
+.contenido af|showDetailHeader,
+.contenido af|panelBox{
+    margin-top: 12px;
+}
+.contenido af|showDetailHeader::title-text0,
+.contenido af|panelBox::header-element{
+    color: #009B3A !important;
+    font-weight: bold !important;
+    border-bottom: 0 !important;
+    font-size: 13px !important;
+    line-height: 15px !important;
+    padding: 4px !important;
+}
+.contenido af|showDetailHeader::content0{
+    margin: 10px 0 15px 0 !important;
+    background-color: #eef8c1 !important;
+    border-radius: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.contenido af|panelBox::content{
+    margin: 0px 0 0px 2px !important;
+    padding: 10px 0 15px 0 !important;
+    background-color: #eef8c1 !important;
+    border-radius: 5px !important;
+    padding-bottom: 5px !important;
+}
+/********************** Tablas ***************************/
+.contenido af|table{
+}
+
+.contenido af|column::column-header{
+    background-color: #427730;
+}
+.contenido af|column::column-header-table{
+    background-color: #427730;
+    border: 1px solid #333333;
+}
+
+.contenido af|column::column-header-cell{
+    background-color: #427730;
+    border-bottom: 0px solid;
+    border-top: 0px solid;
+    border-left: 0px solid;
+    border-right: 1px solid #333333;
+    padding: 2px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 11px;
+}
+.contenido af|column::data-cell{
+    background-color: White !important;
+    border-top: 0px solid !important;
+    border-left: 0px solid !important;
+    border-right: 1px solid #333333 !important;
+    border-bottom: 1px solid #333333 !important;
+    vertical-align: top !important;
+    font-weight: normal !important;
+    height: auto !important;
+    min-height: 21px !important;
+}
+
+.contenido af|table af|column::banded-data-cell{
+    background-color: #eeeeee !important;
+    border-top: 0px solid !important;
+    border-left: 0px solid !important;
+    border-right: 1px solid #333333 !important;
+    border-bottom: 1px solid #333333 !important;
+    vertical-align: top !important;
+    font-weight: normal !important;
+}
+.contenido af|table::data-row:selected af|column::data-cell{
+  /*Item seleccionado*/
+  background-color: rgb(107,161,0) !important;
+}
+.contenido af|table::data-row:selected af|column::banded-data-cell{
+  /*bandas en item seleccionado*/
+  background-color: rgb(107,161,0) !important;
+  /* #7AB800  #009B3A  rgb(107,161,0)*/
+}
+.contenido af|table af|column::data-cell af|inputText::content {
+    height: 40px !important;
+}
+
+/********************** Botones Grandes ***************************/
+.boton,
+.boton af|commandButton,
+.boton af|goButton,
+.boton af|goImageLink,
+.boton af|goLink,
+.boton af|commandToolbarButton,
+.boton af|commandLink,
+.boton af|commandImageLink {
+    color: #ffffff !important;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25) !important;
+    background-image: linear-gradient(to bottom, #427730, #7AB800) !important;
+    background-repeat: repeat-x; !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !important;
+    background-color: #427730 !important;
+    float: right !important;
+    padding: 3px 10px !important;
+    margin: 5px !important;
+    font-size: 11.9px !important;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    border-radius: 3px !important;
+    border: 1px solid #427730 !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    width: auto !important;
+    overflow: visible !important;
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+    text-transform: none !important;
+    text-indent: 0px !important;
+    font: -webkit-small-control !important;
+    display: inline-block;
+}
+
+.boton af|commandToolbarButton::text,
+.boton af|commandToolbarButton:visited,
+.boton af|commandButton::text,
+.boton af|commandButton:visited,
+.boton af|commandImageLink::text,
+.boton af|commandImageLink::text:active, 
+.boton af|commandImageLink:visited af|commandImageLink::text,
+.boton af|commandLink::text,
+.boton af|commandLink:active, 
+.boton af|commandLink:link:active, 
+.boton af|commandLink:visited, 
+.boton af|goImageLink::text,
+.boton af|goImageLink:visited,
+.boton af|goImageLink::text:active, 
+.boton af|goImageLink:visited af|goImageLink::text,
+.boton af|goLink::text,
+.boton af|goLink:active,
+.boton af|goLink:link:active,
+.boton af|goLink:visited,
+.boton af|goButton::text,
+.boton af|goButton:visited,
+.boton af|goImageLink af|goImageLink::text{
+    color: White !important;
+    text-decoration: none !important;
+}
+
+.base .p_AFDisabled af|commandButton,
+.base .p_AFDisabled af|commandToolbarButton,
+.base .p_AFDisabled af|commandLink,
+.base .p_AFDisabled af|commandImageLink, 
+.base .p_AFDisabled af|goButton,
+.base .p_AFDisabled af|goImageLink,
+.base .p_AFDisabled af|goLink,
+.base .p_AFDisabled af|commandButton::text,
+.base .p_AFDisabled af|commandToolbarButton::text,
+.base .p_AFDisabled af|commandLink::text,
+.base .p_AFDisabled af|commandImageLink::text, 
+.base .p_AFDisabled af|goButton::text,
+.base .p_AFDisabled af|goImageLink::text,
+.base .p_AFDisabled af|goLink::text {
+    color: rgb(198,198,198) !important;
+    background-image: none !important;
+    font-weight: bold;
+}
+
+.boton:hover, 
+.boton af|commandButton:hover, 
+.boton af|commandButton:focus:hover,
+.boton af|commandButton::text:hover, 
+.boton af|commandToolbarButton:hover,
+.boton af|commandToolbarButton:focus:hover,
+.boton af|commandToolbarButton::text:hover,
+.boton af|goButton:hover,
+.boton af|goButton:focus:hover,
+.boton af|goButton::text:hover,
+.boton af|goImageLink:hover,
+.boton af|goImageLink:focus:hover,
+.boton af|goImageLink::text:hover,
+.boton af|goLink:hover,
+.boton af|goLink:focus:hover,
+.boton af|goLink::text:hover,
+.boton af|commandLink:hover,
+.boton af|commandLink:focus:hover,
+.boton af|commandLink::text:hover,
+.boton af|commandImageLink:hover, 
+.boton af|commandImageLink:focus:hover,
+.boton af|commandImageLink::text:hover {
+    color: #ffffff !important;
+    background-color: #7AB800 !important;
+    text-decoration: none !important;
+    background-position: 0 -15px !important;
+    -webkit-transition: background-position 0.1s linear !important;
+    -moz-transition: background-position 0.1s linear !important;
+    -o-transition: background-position 0.1s linear !important;
+    transition: background-position 0.1s linear !important;
+}
+
+/********************** Boton pequeño ***************************/
+.boton-peq,
+.boton-peq af|commandImageLink, 
+.boton-peq af|commandLink,
+.boton-peq af|commandButton,
+.boton-peq af|commandToolbarButton,
+.boton-peq af|goImageLink,
+.boton-peq af|goButton,
+.boton-peq af|goLink {
+    color: #ffffff;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25) !important;
+    background-image: linear-gradient(to bottom, #427730, #7AB800) !important;
+    background-repeat: repeat-x !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !important;
+    background-color: #427730 !important;
+    padding: 2px 10px !important;
+    margin: 1px 2px 0px 2px !important;
+    font-size: 11.9px !important;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    border-radius: 3px !important;
+    border: 1px solid #427730 !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    width: auto !important;
+    overflow: visible !important;
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+    text-transform: none !important;
+    text-indent: 0px !important;
+    font: -webkit-small-control !important;
+}
+
+.boton-peq af|commandToolbarButton::text,
+.boton-peq af|commandImageLink::text,
+.boton-peq af|commandLink::text,
+.boton-peq af|commandLink::text,
+.boton-peq af|goLink::text{
+    color: White !important;
+    text-decoration: none !important;
+}
+
+.boton-peq:hover, 
+.boton-peq af|commandButton:hover, 
+.boton-peq af|commandButton:focus:hover,
+.boton-peq af|commandButton::text:hover,
+.boton-peq af|commandToolbarButton:hover,
+.boton-peq af|commandToolbarButton:focus:hover, 
+.boton-peq af|commandToolbarButton::text:hover, 
+.boton-peq af|commandImageLink:hover, 
+.boton-peq af|commandImageLink:focus:hover, 
+.boton-peq af|commandImageLink::text:hover, 
+.boton-peq af|commandLink:hover,
+.boton-peq af|commandLink:focus:hover,
+.boton-peq af|commandLink::text:hover,
+.boton-peq af|goImageLink:hover,
+.boton-peq af|goImageLink:focus:hover,
+.boton-peq af|goImageLink::text:hover,
+.boton-peq af|goButton:hover,
+.boton-peq af|goButton:focus:hover,
+.boton-peq af|goButton::text:hover,
+.boton-peq af|goLink:hover,
+.boton-peq af|goLink:focus:hover,
+.boton-peq af|goLink::text:hover {
+    color: #ffffff !important;
+    background-color: #7AB800 !important;
+    text-decoration: none !important;
+    background-position: 0 -15px !important;
+    -webkit-transition: background-position 0.1s linear !important;
+    -moz-transition: background-position 0.1s linear !important;
+    -o-transition: background-position 0.1s linear !important;
+    transition: background-position 0.1s linear !important;
+}
+
+/********************** Popup ***************************/
+
+.base af|dialog::title,
+.contenido af|dialog::title,
+.base af|panelWindow::title,
+.contenido af|panelWindow::title{
+    color: #009B3A !important;
+    font-weight: bold !important;
+    border-bottom: 0 !important;
+    font-size: 13px !important;
+    line-height: 15px !important;
+    padding: 4px !important;
+}
+
+.base af|dialog::footer-button,
+.contenido af|dialog::footer-button,
+.base af|panelWindow::footer-button,
+
+.contenido af|panelWindow::footer-button {
+    color: #ffffff !important;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25) !important;
+    background-image: linear-gradient(to bottom, #427730, #7AB800) !important;
+    background-repeat: repeat-x; !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !important;
+    background-color: #427730 !important;
+    float: none !important;
+    display: block !important;
+    padding: 3px 10px !important;
+    margin: 5px !important;
+    font-size: 11.9px !important;
+    -webkit-border-radius: 3px !important;
+    -moz-border-radius: 3px !important;
+    border-radius: 3px !important;
+    border: 1px solid #427730 !important;
+    line-height: 20px !important;
+    text-align: center !important;
+    vertical-align: middle !important;
+    cursor: pointer !important;
+    display: inline-block !important;
+    width: auto !important;
+    overflow: visible !important;
+    letter-spacing: normal !important;
+    word-spacing: normal !important;
+    text-transform: none !important;
+    text-indent: 0px !important;
+    font: -webkit-small-control !important;
+}
+
+/*.boton af|commandToolbarButton::text,
+.boton af|commandImageLink::text,
+.boton af|commandLink::text,
+.boton af|commandLink::text,
+.boton af|goLink::text{
+    color: White !important;
+    text-decoration: none !important;
+}*/
+
+.base af|dialog::footer-button:hover,
+.contenido af|dialog::footer-button:hover,
+.base af|panelWindow::footer-button:hover,
+.contenido af|panelWindow::footer-button:hover {
+    color: #ffffff !important;
+    background-color: #7AB800 !important;
+    text-decoration: none !important;
+    background-position: 0 -15px !important;
+    -webkit-transition: background-position 0.1s linear !important;
+    -moz-transition: background-position 0.1s linear !important;
+    -o-transition: background-position 0.1s linear !important;
+    transition: background-position 0.1s linear !important;
+}
+
+/********************** Panel de Informacion del Usuario ***************************/
+/*.userinfo {
+	position: absolute;
+	right: 10px;
+	top:15px;
+	list-style:none;
+	width:auto;
+}
+
+.userinfo af|panelLabelAndMessage::content-cell,
+.userinfo af|inputText::label,
+.userinfo af|panelFormLayout::label-cell{ 
+	color:#0056A4; 
+  font-weight: bold; 
+  padding-right: 6px;
+}*/
+
+ /***************** Panel de Titulo y Botones *******************/
+/*.form-actions { 
+  padding: 5px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e5e5e5;
+  width: 100%;
+}
+.form-actions .titulo { 
+  float:left; 
+  font-size: 13px;
+  color: #062568 !important;
+  margin: 4px 0;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}*/
+/********************** Panel para Botones Derecha ***************************/
+/*.botones {
+  float: right;
+}/*
+/********************** Botones Grandes ***************************/
+/*.button,
+.button af|commandButton,
+.button af|goButton,
+.button af|commandToolbarButton,
+.button af|commandImageLink,
+.push,
+.push af|commandButton,
+.push af|goButton,
+.push af|commandToolbarButton,
+.push af|commandImageLink {*/
+  /*background:  rgb(0, 31, 164);
+  background-repeat: repeat-x;*/
+  /*background-image: url("imagenes/button-bg.png") !important;
+  background-color: rgb(12, 31, 48);
+	height:24px;
+	color: #fff !important;
+	font-size: 12px;
+	font-weight:bold;
+  font-family:Arial, Helvetica, sans-serif  !important;
+	text-align:center;
+	line-height:22px;
+	margin:4px;
+	padding:0 10px;
+  border-color: #0C1F30;
+  border-style: solid;
+  border-width: 1px;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	outline:none;
+	cursor:pointer;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.button af|commandToolbarButton::text,
+.button af|commandImageLink::text,
+.push af|commandToolbarButton::text,
+.push af|commandImageLink::text {
+	color: #fff !important;
+	font-size: 12px;
+	font-weight:bold;
+  font-family:Arial, Helvetica, sans-serif  !important;
+	text-align:center;
+  text-decoration: none;
+}
+
+.button2, 
+.button2 af|commandButton,
+.button2 af|goButton,
+.button2 af|commandToolbarButton{
+	background: #135188;
+  background-image: url("imagenes/button2-bg.png");
+  background-repeat: repeat-x;
+	height:22px;
+	color: #fff;
+	font-size: 11px;
+	font-weight:normal;
+	text-align:center;
+	line-height:20px;
+	margin:4px;
+	padding:0 10px;
+	border:1px solid #0C1F30;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-o-border-radius: 3px;
+	outline:none;
+	cursor:pointer;
+}
+.button:hover, 
+.push:hover, 
+.button2:hover,
+.button af|commandButton:hover, 
+.button af|commandButton:focus:hover,
+.button af|commandToolbarButton:hover,
+.button af|commandToolbarButton:focus:hover,
+.push af|commandButton:hover, 
+.push af|commandButton:focus:hover,
+.push af|commandToolbarButton:hover,
+.push af|commandToolbarButton:focus:hover,
+.button2 af|commandButton:hover, 
+.button2 af|commandButton:focus:hover,
+.button2 af|commandToolbarButton:hover,
+.button2 af|commandToolbarButton:focus:hover{
+  background-image: url("imagenes/button-bg-hover.png") !important;
+  background-color: rgb(12, 31, 48) !important;*/
+  /*background-repeat: repeat-x;*/
+	/*color:#C8D5DF !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+  text-decoration: none !important;
+  border-color: rgb(12, 31, 48) !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+}
+
+.button af|commandButton,
+.button af|goButton,
+.button af|commandToolbarButton,
+.button af|commandImageLink{
+  -webkit-border-image: none;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+  background-color: rgb(245, 245, 245);*/
+  /*background-image: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 230));*/
+  /*background-repeat: repeat-x;
+  border-bottom-color: rgb(179, 179, 179);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-collapse: collapse;
+  border-left-color: rgb(204, 204, 204);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(204, 204, 204);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(204, 204, 204);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+  color: rgb(0, 86, 164);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  height: 14px;
+  line-height: 20px;
+  margin-bottom: 0px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.74902) 0px 1px 1px;
+  vertical-align: middle;
+  width: 14px;
+}*/
+/********************** Boton pequeño ***************************/
+/*.btn-small,
+.btn-small af|commandImageLink, 
+.btn-small af|goImageLink{
+  -webkit-border-image: none;
+  -webkit-box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+  background-color: rgb(245, 245, 245);*/
+  /*background-image: linear-gradient(rgb(255, 255, 255), rgb(230, 230, 230));*/
+  /*background-repeat: repeat-x;
+  border-bottom-color: rgb(179, 179, 179);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-collapse: collapse;
+  border-left-color: rgb(204, 204, 204);
+  border-left-style: solid;
+  border-left-width: 1px;
+  border-right-color: rgb(204, 204, 204);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(204, 204, 204);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.0470588) 0px 1px 2px 0px;
+  color: rgb(0, 86, 164);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  height: 16px;
+  width: 16px;
+  line-height: 16px;
+  margin-bottom: 0px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 2px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: rgba(255, 255, 255, 0.74902) 0px 1px 1px;
+  vertical-align: middle;
+}
+
+.btn-small af|commandToolbarButton::text,
+.btn-small af|commandImageLink::text{
+
+}*/
+
+/********************** Panel Contraible ***************************/
+/*.subheader af|showDetailHeader::title-text0,
+.subheader af|panelBox::header-element{
+  color: #1666AD;
+  font-weight: bold;
+  font-size:13px;
+	line-height: 15px;
+	padding: 4px;
+}*/
+/********************** Subtitulo Tablas ***************************/
+/*.titulo4{
+  margin: 4px 0;
+  color: #062568 !important;
+  font-weight: bold;
+  display: block;
+}*/
+
+/********************** Tablas ***************************/
+/*.tabla af|table{
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+  background-color: transparent !important;*/
+  /*width: 100%*//*;
+}
+
+.tabla af|column::column-header-table{
+  background: #C4D5EC;
+  vertical-align: middle;
+  color: #144C8A;
+  text-align: center;
+  line-height: 11px;
+  font-size: 9px;
+}
+
+.tabla af|column::column-header-cell{
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-top: 0px solid transparent;
+  background: #C4D5EC;
+  vertical-align: middle;
+  color: #144C8A;
+  line-height: 11px;
+  font-size: 9px;
+  font-weight: bold;
+  text-align: center !important;
+}
+.tabla af|column::data-cell{
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-top: 1px solid #dddddd;
+  background-color: transparent !important;
+  color:#666 !important;
+}
+
+.tabla af|table af|column::banded-data-cell{
+  background-color: #f9f9f9 !important;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+  border-top: 1px solid #dddddd;
+  color:#666 !important;
+}
+.tabla af|table::data-row:selected af|column::data-cell{*/
+  /*Item seleccionado*/
+/*}
+.tabla af|table::data-row:selected af|column::banded-data-cell{*/
+  /*bandas en item seleccionado*/
+/*}*/
+/********************** Formulario ***************************/
+/*.maincontainer af|panelFormLayout af|panelLabelAndMessage::label,
+.maincontainer af|panelFormLayout af|panelFormLayout::label-stacked-cell{
+  padding-top: 6px;
+}*/
+/********************** Componentes dentro del Contenedor Principal ***************************/
+/*.maincontainer af|inputText::label,
+.maincontainer af|panelFormLayout::label-stacked-cell,
+.maincontainer af|inputNumberSpinbox::label,
+.maincontainer af|inputListOfValues::label,
+.maincontainer af|inputDate::label,
+.maincontainer af|inputText::label,
+.maincontainer af|selectBooleanCheckbox::label,
+.maincontainer af|selectOneChoice::label,
+.maincontainer af|selectOneRadio::label,
+.maincontainer af|panelLabelAndMessage::label,
+.container af|inputText::label,
+.container af|panelFormLayout::label-stacked-cell,
+.container af|inputNumberSpinbox::label,
+.container af|inputListOfValues::label,
+.container af|inputDate::label,
+.container af|inputText::label,
+.container af|selectBooleanCheckbox::label,
+.container af|selectOneChoice::label,
+.container af|selectOneRadio::label,
+.container af|panelLabelAndMessage::label{
+  font-size: 11px !important;
+  font-weight: normal !important;
+  line-height: 15px !important;
+  margin-bottom: 0 !important;
+  border-spacing: 2px !important;
+  border-color: gray !important;
+  font-family:Arial, Helvetica, sans-serif !important;
+	color:#666 !important;
+}
+.maincontainer af|inputText::content,
+.maincontainer af|inputNumberSpinbox::content,
+.maincontainer af|inputListOfValues::content,
+.maincontainer af|inputDate::content,
+.maincontainer af|inputText::content,
+.container af|inputText::content,
+.container af|inputNumberSpinbox::content,
+.container af|inputListOfValues::content,
+.container af|inputDate::content,
+.container af|inputText::content{
+  border-top-color: #adb6c4 !important;
+  border-left-color: #adb6c4 !important;
+  border-bottom-color: #E5E8EE !important;
+  border-right-color: #E5E8EE !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-image: url(/HPH-CentralWeb/afr/fusion/inputText_bg.png) !important;
+  background-repeat: repeat-x !important;
+  color:#666 !important;
+  padding: 4px 2px 4px 3px !important;
+  margin: 1px !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.maincontainer af|selectOneChoice::content,
+.container af|selectOneChoice::content{
+  border-top-color: #adb6c4 !important;
+  border-left-color: #adb6c4 !important;
+  border-bottom-color: #E5E8EE !important;
+  border-right-color: #E5E8EE !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  background-image: none !important;
+  background-repeat: repeat-x !important;
+  color:#666 !important;
+  padding: 4px 2px 4px 3px !important;
+  margin: 1px !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.maincontainer af|selectBooleanCheckbox::content,
+.maincontainer af|selectOneRadio::content,
+.container af|selectBooleanCheckbox::content,
+.container af|selectOneRadio::content{
+  padding: 4px 2px 4px 3px !important;
+  margin: 1px !important;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+.maincontainer af|selectOneRadio::item-text,
+.maincontainer af|selectBooleanCheckbox::item-text,
+.container af|selectOneRadio::item-text,
+.container af|selectBooleanCheckbox::item-text{
+  color:#666 !important;
+}
+.maincontainer af|dialog,
+.maincontainer af|panelWindow,
+.container af|dialog,
+.container af|panelWindow{
+    background-color: white !important;
+}*/
+

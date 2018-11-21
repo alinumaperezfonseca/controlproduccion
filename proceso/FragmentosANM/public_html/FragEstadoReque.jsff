@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1">
+
+
+
+
+    <af:table value="#{bindings.Estado.collectionModel}" var="row" rows="#{bindings.Estado.rangeSize}"
+              emptyText="#{bindings.Estado.viewable ? 'No data to display.' : 'Access Denied.'}" rowBandingInterval="0"
+              fetchSize="#{bindings.Estado.rangeSize}" id="t1" binding="#{backing_consultarEstadoReq.t1}">
+        <af:column headerText="#{bindings.Estado.hints.Cantidad.label}" id="c1">
+            <af:inputText value="#{row.bindings.Cantidad.inputValue}" label="#{bindings.Estado.hints.Cantidad.label}"
+                          required="#{bindings.Estado.hints.Cantidad.mandatory}"
+                          columns="#{bindings.Estado.hints.Cantidad.displayWidth}"
+                          maximumLength="#{bindings.Estado.hints.Cantidad.precision}"
+                          shortDesc="#{bindings.Estado.hints.Cantidad.tooltip}" id="it1">
+                <f:validator binding="#{row.bindings.Cantidad.validator}"/>
+            </af:inputText>
+        </af:column>
+        <af:column headerText="#{bindings.Estado.hints.Estado.label}" id="c2">
+            <af:inputText value="#{row.bindings.Estado.inputValue}" label="#{bindings.Estado.hints.Estado.label}"
+                          required="#{bindings.Estado.hints.Estado.mandatory}"
+                          columns="#{bindings.Estado.hints.Estado.displayWidth}"
+                          maximumLength="#{bindings.Estado.hints.Estado.precision}"
+                          shortDesc="#{bindings.Estado.hints.Estado.tooltip}" id="it2">
+                <f:validator binding="#{row.bindings.Estado.validator}"/>
+            </af:inputText>
+        </af:column>
+    </af:table>
+
+
+
+
+
+
+
+
+
+</jsp:root>

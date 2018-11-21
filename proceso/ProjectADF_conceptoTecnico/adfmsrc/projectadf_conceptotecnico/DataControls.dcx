@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration" version="12.2.1.11.3" id="DataControls"
+                    Package="projectadf_conceptotecnico">
+  <AdapterDataControl id="ProjectADF_conceptoTecnico_Humantask_generarConceptoTecnico"
+                      FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl"
+                      ImplDef="oracle.bpel.services.datacontrol.XSDDataControlDefinition" SupportsTransactions="true"
+                      SupportsSortCollection="false" SupportsResetState="false" SupportsRangesize="false"
+                      SupportsFindMode="false" SupportsUpdates="false"
+                      Definition="ProjectADF_conceptoTecnico_Humantask_generarConceptoTecnico"
+                      BeanClass="ProjectADF_conceptoTecnico_Humantask_generarConceptoTecnico"
+                      xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <XSDDataControl xmlns="http://xmlns.oracle.com/bpel/workflow/task"
+                      SchemaLocation="file:/C:/JDeveloper/mywork/ANMBpmApplicationV12/ANMBpmApplicationV12/ANMBpmApplicationV12/BpmProject/SOA/Schemas/Humantask_generarConceptoTecnicoWorkflowTask.xsd"
+                      RootElement="task" rootelementnamespace="http://xmlns.oracle.com/bpel/workflow/task"
+                      taskLoc="../BpmProject/SOA/HumanTasks/Humantask_generarConceptoTecnico.task"
+                      InitiationTask="false" DocumentStoreConfiguration="false"/>
+    </Source>
+  </AdapterDataControl>
+</DataControlConfigs>

@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View4">
+      <property
+         name="activityId">FragVencimiento</property>
+      <property
+         name="pageFragment">true</property>
+      <property
+         name="x">159.35449</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>FragVencimiento&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">465.44824</property>
+      <property
+         name="page">/FragVencimiento.jsff</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+</SDM>

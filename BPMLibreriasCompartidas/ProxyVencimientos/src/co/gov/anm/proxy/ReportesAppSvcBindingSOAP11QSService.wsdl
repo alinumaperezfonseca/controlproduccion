@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<WL5G3N0:definitions name="ReportesAppSvc_V1.0" targetNamespace="http://xmlns.anm.gov.co/AppSvc/ConsultarVencimientoContractual_V1.0" xmlns:WL5G3N0="http://schemas.xmlsoap.org/wsdl/" xmlns:WL5G3N1="http://xmlns.anm.gov.co/appopt/AOptCommon_V1.0" xmlns:WL5G3N2="http://xmlns.anm.gov.co/eo/Status_V1.0" xmlns:WL5G3N3="http://xmlns.anm.gov.co/appopt/ReportesAppSvc/ConsultarVencimientoContractual_V1.0" xmlns:WL5G3N4="http://xmlns.anm.gov.co/AppSvc/ConsultarVencimientoContractual_V1.0" xmlns:WL5G3N5="http://schemas.xmlsoap.org/wsdl/soap/">
+  <WL5G3N0:types>
+    <xsd:schema xmlns:appoptCommon="http://xmlns.anm.gov.co/appopt/AOptCommon_V1.0" xmlns:appoptConsultarVencimientoContractual="http://xmlns.anm.gov.co/appopt/ReportesAppSvc/ConsultarVencimientoContractual_V1.0" xmlns:eoStatus="http://xmlns.anm.gov.co/eo/Status_V1.0" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://xmlns.anm.gov.co/AppSvc/ConsultarVencimientoContractual_V1.0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:import namespace="http://xmlns.anm.gov.co/appopt/AOptCommon_V1.0" schemaLocation="SYS_DEF.xsd"/>
+      <xsd:import namespace="http://xmlns.anm.gov.co/eo/Status_V1.0" schemaLocation="SYS_DEF_1.xsd"/>
+      <xsd:import namespace="http://xmlns.anm.gov.co/appopt/ReportesAppSvc/ConsultarVencimientoContractual_V1.0" schemaLocation="SYS_DEF_2.xsd"/>
+    </xsd:schema>
+  </WL5G3N0:types>
+  <WL5G3N0:message name="MsgHdrRq">
+    <WL5G3N0:part element="WL5G3N1:MsgHdrRq" name="MsgHdrRq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="MsgHdrRs">
+    <WL5G3N0:part element="WL5G3N1:MsgHdrRs" name="MsgHdrRs"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="SystemFault">
+    <WL5G3N0:part element="WL5G3N2:SystemFault" name="SystemFault"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarVencimientoContractualRq">
+    <WL5G3N0:part element="WL5G3N3:ConsultarVencimientoContractualRq" name="ConsultarVencimientoContractualRq"/>
+  </WL5G3N0:message>
+  <WL5G3N0:message name="ConsultarVencimientoContractualRs">
+    <WL5G3N0:part element="WL5G3N3:ConsultarVencimientoContractualRs" name="ConsultarVencimientoContractualRs"/>
+  </WL5G3N0:message>
+  <WL5G3N0:portType name="ConsultarVencimientoContractualAppSvcPort">
+    <WL5G3N0:operation name="ConsultarVencimientoContractual">
+      <WL5G3N0:input message="WL5G3N4:ConsultarVencimientoContractualRq"/>
+      <WL5G3N0:output message="WL5G3N4:ConsultarVencimientoContractualRs"/>
+      <WL5G3N0:fault message="WL5G3N4:SystemFault" name="SystemFault"/>
+    </WL5G3N0:operation>
+  </WL5G3N0:portType>
+  <WL5G3N0:binding name="ReportesAppSvcBindingSOAP11" type="WL5G3N4:ConsultarVencimientoContractualAppSvcPort">
+    <WL5G3N5:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <WL5G3N0:operation name="ConsultarVencimientoContractual">
+      <WL5G3N5:operation soapAction="http://xmlns.anm.gov.co/ApplicationService/ReportesAppSvc_V1.0/ConsultarVencimientoContractual" style="document"/>
+      <WL5G3N0:input>
+        <WL5G3N5:body parts="ConsultarVencimientoContractualRq" use="literal"/>
+        <WL5G3N5:header message="WL5G3N4:MsgHdrRq" part="MsgHdrRq" use="literal"/>
+      </WL5G3N0:input>
+      <WL5G3N0:output>
+        <WL5G3N5:body parts="ConsultarVencimientoContractualRs" use="literal"/>
+        <WL5G3N5:header message="WL5G3N4:MsgHdrRs" part="MsgHdrRs" use="literal"/>
+      </WL5G3N0:output>
+      <WL5G3N0:fault name="SystemFault">
+        <WL5G3N5:fault name="SystemFault" use="literal"/>
+      </WL5G3N0:fault>
+    </WL5G3N0:operation>
+  </WL5G3N0:binding>
+  <WL5G3N0:service name="ReportesAppSvcBindingSOAP11QSService">
+    <WL5G3N0:documentation>OSB Service</WL5G3N0:documentation>
+    <WL5G3N0:port binding="WL5G3N4:ReportesAppSvcBindingSOAP11" name="ReportesAppSvcBindingSOAP11QSPort">
+      <WL5G3N5:address location="http://192.168.1.24:8011/ReportesRS/ConsultarVencimientoContractual"/>
+    </WL5G3N0:port>
+  </WL5G3N0:service>
+</WL5G3N0:definitions>

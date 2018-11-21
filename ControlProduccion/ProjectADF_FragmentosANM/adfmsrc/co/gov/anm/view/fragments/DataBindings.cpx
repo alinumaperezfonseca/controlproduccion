@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.9.14" id="DataBindings"
+             SeparateXMLFiles="false" Package="co.gov.anm.view.fragments" ClientType="Generic">
+  <pageMap>
+    <page path="/fragmentos/fgConsultarProyectos.jsff" usageId="co_gov_anm_view_fragments_fgConsultarProyectosPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="co_gov_anm_view_fragments_fgConsultarProyectosPageDef" path="fragmentos.fgConsultarProyectosPageDef"/>
+  </pageDefinitionUsages>
+</Application>

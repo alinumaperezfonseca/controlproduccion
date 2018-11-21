@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1">
+
+
+
+
+
+    <dvt:lineChart id="lineChart1" var="row" value="#{bindings.Titulo.collectionModel}"
+                   binding="#{backing_comparaciones.lineChart1}">
+        <dvt:chartLegend id="cl1"/>
+        <f:facet name="dataStamp">
+            <dvt:chartDataItem id="di1" series="#{row.NombreTitular} #{row.NombreTitulo}" value="#{row.Valor}"
+                               group="#{row.FechaCarga}" binding="#{backing_comparaciones.di1}"/>
+        </f:facet>
+    </dvt:lineChart>
+
+
+
+
+
+</jsp:root>

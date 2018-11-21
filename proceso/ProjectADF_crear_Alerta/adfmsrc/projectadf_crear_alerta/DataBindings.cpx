@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="12.2.1.11.3" id="DataBindings"
+             SeparateXMLFiles="false" Package="projectadf_crear_alerta" ClientType="Generic">
+  <definitionFactories>
+    <factory nameSpace="http://xmlns.oracle.com/adf/controller/binding"
+             className="oracle.adf.controller.internal.binding.TaskFlowBindingDefFactoryImpl"/>
+    <dtfactory className="oracle.adf.controller.internal.dtrt.binding.BindingDTObjectFactory"/>
+  </definitionFactories>
+  <pageMap>
+    <page path="/Humantask_crearAlerta_TaskDetails.jspx"
+          usageId="projectadf_crear_alerta_Humantask_crearAlerta_TaskDetailsPageDef"/>
+    <page path="/Humantask_crearAlerta_TaskNotification.jspx"
+          usageId="projectadf_crear_alerta_Humantask_crearAlerta_TaskNotificationPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="projectadf_crear_alerta_Humantask_crearAlerta_TaskDetailsPageDef"
+          path="projectadf_crear_alerta.pageDefs.Humantask_crearAlerta_TaskDetailsPageDef"/>
+    <page id="projectadf_crear_alerta_Humantask_crearAlerta_TaskNotificationPageDef"
+          path="projectadf_crear_alerta.pageDefs.Humantask_crearAlerta_TaskNotificationPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="ProjectADF_crear_Alerta_Humantask_crearAlerta"
+        path="projectadf_crear_alerta.ProjectADF_crear_Alerta_Humantask_crearAlerta"/>
+  </dataControlUsages>
+</Application>
