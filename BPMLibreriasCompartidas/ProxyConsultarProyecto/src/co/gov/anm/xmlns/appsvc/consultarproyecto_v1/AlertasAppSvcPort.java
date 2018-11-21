@@ -1,8 +1,5 @@
 
-package co.gov.anm.proxy;
-
-import co.gov.anm.xmlns.appopt.aoptcommon_v1.MsgHdrRq;
-import co.gov.anm.xmlns.appopt.aoptcommon_v1.MsgHdrRs;
+package co.gov.anm.xmlns.appsvc.consultarproyecto_v1;
 
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -49,6 +46,4 @@ public interface AlertasAppSvcPort {
                                                                partName = "ConsultarProyectoRq")
                                                      ConsultarProyectoRqType consultarProyectoRq) throws SystemFault;
 
-    public ConsultarProyectoRsType consultarProyecto(ConsultarProyectoRqType consultarProyectoRq, MsgHdrRq msgHdrRq,
-                                                     MsgHdrRs msgHdrRs);
 }
