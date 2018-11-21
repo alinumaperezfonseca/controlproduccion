@@ -4,6 +4,7 @@ Thumbs.db
 
 # Compiled class file
 *.class
+*.jdb
 
 # Log files
 *.log
